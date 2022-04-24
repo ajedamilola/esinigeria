@@ -1,0 +1,17 @@
+.services-home{
+    padding: 6% 0em;
+    min-height: 100vh;
+    h2{
+        font-weight: 700;
+        font-size: 2em;
+        font-family: poppins;
+        &::after{
+            content: " ";
+            border: 3px solid $primary;
+            display: block;
+            text-align: center;
+            margin: auto;
+            width: 30%
+        }
+    }
+}

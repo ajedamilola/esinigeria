@@ -27,11 +27,14 @@
     font-family: "poppins";
   }
 }
-@media (max-width:1000px) {
-  .topbar{
+@media (max-width: 900px) {
+  .trust-note {
+    font-size: .8em !important;
+  }
+  .topbar {
     min-height: 110vh !important;
   }
-  .content{
+  .content {
     width: 99% !important;
   }
 }

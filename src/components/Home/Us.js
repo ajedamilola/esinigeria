@@ -14,7 +14,7 @@ export default function Us() {
         </h2>
         <div className="row g-5 justify-content-center py-3 py-md-5">
           {/* Mission */}
-          <div className="col-12 col-md-6 col-lg-4 text-center text-md-start">
+          <div className="col-12 col-md-6 col-lg-4 ">
             <div className="bg-white shadow-lg p-3 rounded-border">
               <IconContainer>
                 <FaPaperPlane className="text-primary" size={30} />
@@ -22,7 +22,7 @@ export default function Us() {
               <h3>
                 <span className="grad">Mission </span>
               </h3>
-              <p className="text-muted">
+              <p className="text-muted text-center text-md-start">
                 Laboris excepteur sint adipisicing cillum. Amet incididunt
                 commodo incididunt dolore ad aute aliquip. Sint reprehenderit
                 ullamco velit aliqua.
@@ -49,15 +49,15 @@ export default function Us() {
             </div>
           </div>
           {/* Vision */}
-          <div className="col-12 col-md-6 col-lg-4 text-center text-md-end">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="bg-white shadow-lg p-3 rounded-border">
               <IconContainer right>
                 <FaGlasses className="text-primary" size={30} />
               </IconContainer>
-              <h3>
+              <h3 className="text-end">
                 <span className="grad">Vision</span>
               </h3>
-              <p className="text-muted">
+              <p className="text-muted  text-center text-md-end">
                 Laboris excepteur sint adipisicing cillum. Amet incididunt
                 commodo incididunt dolore ad aute aliquip. Sint reprehenderit
                 ullamco velit aliqua.
