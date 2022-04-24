@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `esinigeria`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Elitist Solution International`,
+    siteUrl: `https://www.esinigeria.com.ng`
   },
   plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',

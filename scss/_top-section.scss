@@ -1,0 +1,37 @@
+.topbar {
+  & {
+    background-image: url("../images/topbar-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-blend-mode: multiply;
+    background-color: $dark;
+  }
+  .intro {
+    margin-top: 20vh;
+    p {
+      font-size: 1em;
+      font-family: "roboto";
+    }
+    h1 {
+      font-family: "poppins";
+      font-weight: bold;
+      font-size: $headline;
+    }
+    .content {
+      width: 70%;
+    }
+  }
+  .trust-note {
+    font-size: 1em;
+    font-family: "poppins";
+  }
+}
+@media (max-width:1000px) {
+  .topbar{
+    min-height: 110vh !important;
+  }
+  .content{
+    width: 99% !important;
+  }
+}

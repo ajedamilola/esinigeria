@@ -1,0 +1,17 @@
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "top-section";
+@import "navbar";
+@import "who_we_are";
+.bg-fade{
+    background-color: rgba($dark,.5) !important;
+}
+.bg-grad{
+    background-image: $gradient;
+}
+.rounded-border{
+    border-radius: 2rem !important;
+}
+.border-1{
+    border: 2px solid $primary !important;
+}

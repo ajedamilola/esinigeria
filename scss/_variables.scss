@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "poppins-light";
+    src: url("../fonts/Poppins-Light.ttf");
+}
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/roboto-light.ttf");
+}
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  auto: auto,
+) !default;
+
+
+$primary:rgb(28, 136, 28);
+$headline:calc(1.5em + 100vw/30);
+$heading:calc(1.5em + 100vw/50);
+$subheading:calc(1.5em + 100vw/70);
+
+$gradient:linear-gradient(to right,$primary,darken($primary,20));
