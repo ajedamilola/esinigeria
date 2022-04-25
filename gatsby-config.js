@@ -1,4 +1,5 @@
 module.exports = {
+	pathPrefix: "/reponame",
   siteMetadata: {
     title: `Elitist Solution International`,
     siteUrl: `https://www.esinigeria.com.ng`

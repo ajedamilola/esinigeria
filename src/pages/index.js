@@ -19,7 +19,7 @@ export default function IndexPage() {
       <Us />
       <Services />
 	  <Helmet>
-		<script src="/bootstrap.min.js"></script>"
+		<script src="./bootstrap.min.js"></script>"
 	  </Helmet>
     </div>
   );
