@@ -12408,4 +12408,9 @@ textarea.form-control-lg {
   background-image: linear-gradient(to right, #35d535, #89e789);
 }
 
+body {
+  width: 100vw !important;
+  overflow-x: hidden;
+}
+
 /*# sourceMappingURL=style.css.map */

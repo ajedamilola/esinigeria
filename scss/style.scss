@@ -27,3 +27,7 @@
 .grad-light{
     background-image: $gradient-light;
 }
+body{
+    width: 100vw !important;
+    overflow-x: hidden;
+}
