@@ -11,12 +11,6 @@
     font-weight: 900;
     font-size: 1.75em;
   }
-  .grad {
-    background-image: $gradient;
-    background-size: contain;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   p {
     font-family: poppins-light, roboto, "segoe ui", sans-serif;
   }

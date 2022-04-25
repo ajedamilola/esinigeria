@@ -3,16 +3,27 @@
 @import "top-section";
 @import "navbar";
 @import "who_we_are";
-@import "home_services_slider";
-.bg-fade{
-    background-color: rgba($dark,.5) !important;
+@import "home_services";
+.bg-fade {
+  background-color: rgba($dark, 0.5) !important;
 }
-.bg-grad{
+.bg-grad {
+  background-image: $gradient;
+}
+.rounded-border {
+  border-radius: 2rem !important;
+}
+.border-1 {
+  border: 2px solid $primary !important;
+}
+.grad,.grad-light {
+  background-size: contain;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.grad{
     background-image: $gradient;
 }
-.rounded-border{
-    border-radius: 2rem !important;
-}
-.border-1{
-    border: 2px solid $primary !important;
+.grad-light{
+    background-image: $gradient-light;
 }

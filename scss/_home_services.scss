@@ -1,5 +1,5 @@
 .services-home{
-    padding: 6% 0em;
+    padding: 9% 0em;
     min-height: 100vh;
     h2{
         font-weight: 700;
@@ -13,5 +13,14 @@
             margin: auto;
             width: 30%
         }
+    }
+    h3{
+        font-family: "roboto";
+        font-weight: 800;
+        font-size: 2em;
+    }
+    p{
+        font-family: "poppins-light";
+        font-size: .9em;
     }
 }

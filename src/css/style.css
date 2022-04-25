@@ -12347,18 +12347,12 @@ textarea.form-control-lg {
   font-weight: 900;
   font-size: 1.75em;
 }
-.wwa .grad {
-  background-image: linear-gradient(to right, #1c881c, #0b330b);
-  background-size: contain;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .wwa p {
   font-family: poppins-light, roboto, "segoe ui", sans-serif;
 }
 
 .services-home {
-  padding: 6% 0em;
+  padding: 9% 0em;
   min-height: 100vh;
 }
 .services-home h2, .services-home .h2 {
@@ -12373,6 +12367,15 @@ textarea.form-control-lg {
   text-align: center;
   margin: auto;
   width: 30%;
+}
+.services-home h3, .services-home .h3 {
+  font-family: "roboto";
+  font-weight: 800;
+  font-size: 2em;
+}
+.services-home p {
+  font-family: "poppins-light";
+  font-size: 0.9em;
 }
 
 .bg-fade {
@@ -12389,6 +12392,20 @@ textarea.form-control-lg {
 
 .border-1 {
   border: 2px solid #1c881c !important;
+}
+
+.grad, .grad-light {
+  background-size: contain;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grad {
+  background-image: linear-gradient(to right, #1c881c, #0b330b);
+}
+
+.grad-light {
+  background-image: linear-gradient(to right, #35d535, #89e789);
 }
 
 /*# sourceMappingURL=style.css.map */
