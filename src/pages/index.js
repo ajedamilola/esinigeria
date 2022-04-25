@@ -7,6 +7,7 @@ import "../css/style.css";
 import Us from "../components/Home/Us";
 import { FaCertificate } from "@react-icons/all-files/fa/FaCertificate";
 import Services from "../components/Home/Services";
+import Features from "../components/Home/Features";
 
 export default function IndexPage() {
   return (
@@ -18,6 +19,7 @@ export default function IndexPage() {
       </Topbar>
       <Us />
       <Services />
+      <Features />
 	  <Helmet>
 		<script src="./bootstrap.min.js"></script>"
 	  </Helmet>
