@@ -1,11 +1,11 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import Intro from "../components/Home/Intro";
 import Navbar from "../components/navbar";
 import Topbar from "../components/Home/topbar";
 import "../css/style.css";
 import Us from "../components/Home/Us";
 import { FaCertificate } from "@react-icons/all-files/fa/FaCertificate";
-import "bootstrap/dist/js/bootstrap.bundle";
 import Services from "../components/Home/Services";
 
 export default function IndexPage() {
@@ -18,6 +18,9 @@ export default function IndexPage() {
       </Topbar>
       <Us />
       <Services />
+	  <Helmet>
+		<script src="/bootstrap.min.js"></script>"
+	  </Helmet>
     </div>
   );
 }
