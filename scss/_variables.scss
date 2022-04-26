@@ -1,20 +1,20 @@
 @font-face {
-    font-family: "poppins";
-    src: url("../fonts/Poppins-Regular.ttf");
+  font-family: "poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
 }
 @font-face {
-    font-family: "poppins-light";
-    src: url("../fonts/Poppins-Light.ttf");
+  font-family: "poppins-light";
+  src: url("../fonts/Poppins-Light.ttf");
 }
 @font-face {
-    font-family: "roboto";
-    src: url("../fonts/roboto-light.ttf");
+  font-family: "roboto";
+  src: url("../fonts/roboto-light.ttf");
 }
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
@@ -23,25 +23,30 @@ $spacers: (
   auto: auto,
 ) !default;
 
+$primary: rgb(16, 190, 16);
+$dark: rgb(29, 36, 32);
+$headline: calc(1.5em + 100vw / 30);
+$heading: calc(1.5em + 100vw / 50);
+$subheading: calc(1.5em + 100vw / 70);
 
-$primary:rgb(19, 170, 19);
-$headline:calc(1.5em + 100vw/30);
-$heading:calc(1.5em + 100vw/50);
-$subheading:calc(1.5em + 100vw/70);
-
-$gradient:linear-gradient(to right,$primary,darken($primary,20));
-$gradient-light:linear-gradient(to right,lighten($primary,20),lighten($primary,40));
-%section{
-    padding: 9% 0em;
-    min-height: 100vh;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
+$gradient: linear-gradient(to right, $primary, darken($primary, 20));
+$gradient-light: linear-gradient(
+  to right,
+  lighten($primary, 20),
+  lighten($primary, 40)
+);
+$breadcrumb-divider: ">";
+%section {
+  padding: 9% 0em;
+  min-height: 100vh;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
 }
-%title{
-    font-family: poppins,roboto;
-    font-weight: 700;
-    font-size: $subheading;
-    padding-left: 1em;
-    border-left: 4px solid $primary;
+%title {
+  font-family: poppins, roboto;
+  font-weight: 700;
+  font-size: $subheading;
+  padding-left: 1em;
+  border-left: 4px solid $primary;
 }

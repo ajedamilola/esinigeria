@@ -1,0 +1,14 @@
+.about-content{
+    h2{
+        font-family: poppins;
+        font-size: $subheading;
+        padding:0em .8em;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: darken($primary,20);
+    }
+    p{
+        font-family: poppins-light;
+    }
+    padding: 10% 0px;
+}

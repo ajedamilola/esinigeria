@@ -9,6 +9,11 @@
 @import "about_home";
 @import "footer";
 
+//Anout Page
+@import "About/content";
+
+
+
 .bg {
   &-fade {
     background-color: rgba($dark, 0.5) !important;

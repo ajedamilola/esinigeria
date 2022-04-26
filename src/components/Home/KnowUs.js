@@ -2,11 +2,12 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import Helmet from "react-helmet";
+import Container from "../Container";
 
 export default function About() {
   return (
     <div className="about-home d-flex align-items-center">
-      <div className="container">
+      <Container>
         <h2 className="grad">About Us</h2>
         <div className="row align-items-center">
           <div className="col">
@@ -44,7 +45,7 @@ export default function About() {
             </menu>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

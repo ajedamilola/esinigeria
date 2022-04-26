@@ -3,11 +3,18 @@ import { FaList } from "@react-icons/all-files/fa/FaList";
 import { FaPaperPlane } from "@react-icons/all-files/fa/FaPaperPlane";
 import { FaGlasses } from "@react-icons/all-files/fa/FaGlasses";
 import IconContainer from "../IconContainer";
+import Container from "../Container";
+import BreadCrumb from "../BreadCrumb";
 
 export default function Us() {
   return (
     <div className="wwa bg-light">
-      <div className="container">
+      <Container>
+        <BreadCrumb
+          pages={[{ title: "Home", to: "/", active: true }]}
+          className="bg-light"
+        />
+
         <h2>
           <span className="text-primary">O</span>UR{" "}
           <span className="text-primary">F</span>OCUS
@@ -65,7 +72,7 @@ export default function Us() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

@@ -1,14 +1,28 @@
+%topbar {
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: $dark;
+}
 .topbar {
-  & {
+  &-home,&-about {
+    @extend %topbar;
+  }
+  &-home {
     background-image: url("../images/topbar-bg.jpg");
-    background-size: cover;
-    background-position: center;
     min-height: 100vh;
-    background-blend-mode: multiply;
-    background-color: $dark;
+  }
+  &-about {
+    background-image: url("../images/topbar-bg.jpg");
+    min-height: 50vh;
   }
   .intro {
-    margin-top: 20vh;
+    &-about{
+      margin-top: 10vh;
+    }
+    &-home{
+      margin-top: 20vh;
+    }
     p {
       font-size: 1em;
       font-family: "roboto";
@@ -18,8 +32,19 @@
       font-weight: bold;
       font-size: $headline;
     }
+    h2 {
+      font-family: "poppins";
+      font-weight: bold;
+      font-size: $subheading;
+    }
     .content {
-      width: 70%;
+      &{
+
+        width: 70%;
+      }
+      &-about{
+        width: 90%;
+      }
     }
   }
   .trust-note {
@@ -29,9 +54,9 @@
 }
 @media (max-width: 900px) {
   .trust-note {
-    font-size: .8em !important;
+    font-size: 0.8em !important;
   }
-  .topbar {
+  .topbar-home {
     min-height: 110vh !important;
   }
   .content {

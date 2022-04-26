@@ -4,11 +4,12 @@ import { MdPhone } from "@react-icons/all-files/md/MdPhone";
 import { MdArrowBack as Prev } from "@react-icons/all-files/md/MdArrowBack";
 import { MdArrowForward as Next } from "@react-icons/all-files/md/MdArrowForward";
 import Logo from "../../images/website.png";
+import Container from "../Container";
 
 export default function () {
   return (
     <div className="features bg-light d-flex">
-      <div className="container">
+      <Container>
         <h2 className="grad">WE PROVIDE</h2>
         <div
           className="carousel slide"
@@ -61,7 +62,7 @@ export default function () {
             <Next color="var(--bs-primary)" size={30}/>
           </button>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

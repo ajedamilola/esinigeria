@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Intro() {
   return (
-    <div className="container intro text-white">
+    <div className="container intro-home intro text-white">
       <div className="content">
         <h1>Elitist Solution International</h1>
         <p>
@@ -12,6 +12,7 @@ export default function Intro() {
           consequat enim anim quis. Eiusmod est exercitation elit ipsum.
         </p>
         <button className="btn btn-outline-primary">Company Profile</button>
+        <button className="btn btn-primary ms-1">Services</button>
       </div>
     </div>
   );

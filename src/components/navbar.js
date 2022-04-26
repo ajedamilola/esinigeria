@@ -1,11 +1,12 @@
 import { Link } from "gatsby";
 import React from "react";
+import Container from "../components/Container";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-dark bg-fade navbar-expand-lg">
-      <div className="container">
-        <a className="navbar-brand">ESI Nigeria</a>
+    <nav className="navbar navbar-dark bg-fade navbar-expand-lg justify-self-start">
+      <Container>
+        <Link className="navbar-brand">ESI Nigeria</Link>
         <button
           className="navbar-toggler"
           data-bs-target="#top-navigation"
@@ -37,7 +38,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-      </div>
+      </Container>
     </nav>
   );
 }
