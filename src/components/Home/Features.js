@@ -7,7 +7,7 @@ import Logo from "../../images/website.png";
 
 export default function () {
   return (
-    <div className="features bg-light">
+    <div className="features bg-light d-flex">
       <div className="container">
         <h2 className="grad">WE PROVIDE</h2>
         <div
@@ -27,7 +27,7 @@ export default function () {
                 </div>
                 <div className="col-12 col-md-6">
                   <FeatureCard
-                    title="24/7 Support"
+                    title="Fast Services"
                     content="Pariatur ea mollit amet cillum pariatur anim culpa ea nulla excepteur. Sint nisi quis aliquip sunt ad ullamco consequat excepteur"
                     image={<MdPhone size={50} color="var(--bs-primary)" />}
                   />
@@ -36,27 +36,21 @@ export default function () {
             </div>
             <div className="carousel-item" data-bs-interval="2500">
               <div className="row g-3 my-5">
-                <div className="col-12 col-md-4">
+                <div className="col-12 col-md-6">
                   <FeatureCard
                     title="24/7 Support"
                     content="Pariatur ea mollit amet cillum pariatur anim culpa ea nulla excepteur. Sint nisi quis aliquip sunt ad ullamco consequat excepteur"
                     image={<MdPhone size={50} color="var(--bs-primary)" />}
                   />
                 </div>
-                <div className="col-12 col-md-4">
+                <div className="col-12 col-md-6">
                   <FeatureCard
                     title="24/7 Support"
                     content="Pariatur ea mollit amet cillum pariatur anim culpa ea nulla excepteur. Sint nisi quis aliquip sunt ad ullamco consequat excepteur"
                     image={<MdPhone size={50} color="var(--bs-primary)" />}
                   />
                 </div>
-                <div className="col-12 col-md-4">
-                  <FeatureCard
-                    title="24/7 Support"
-                    content="Pariatur ea mollit amet cillum pariatur anim culpa ea nulla excepteur. Sint nisi quis aliquip sunt ad ullamco consequat excepteur"
-                    image={<MdPhone size={50} color="var(--bs-primary)" />}
-                  />
-                </div>
+               
               </div>
             </div>
           </div>

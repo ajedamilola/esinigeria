@@ -1,0 +1,23 @@
+.about-home{
+    @extend %section;
+    h2{
+        @extend %title;
+    }
+    p{
+        font-size: 1.1em;
+        font-family: roboto,poppins-light;
+        font-weight: 700;
+    }
+    menu{
+        width: fit-content;
+        background-color: white;
+        box-shadow: 1px 2px 10px 3px $gray-400;
+        padding: 0px !important;
+        margin-top: -5px !important;
+        .dropdown-item{
+            width: 100%;
+            padding: .55em 3em;
+            text-align: center;
+        }
+    }
+}

@@ -1,17 +1,12 @@
 .features{
-    min-height: 90vh;
-    padding: 10% 0%;
+   @extend %section;
     .f-card{
         max-width: 400px;
         width: fit-content;
         margin: auto;
     }
     h2{
-        font-family: poppins,roboto;
-        font-weight: 700;
-        font-size: $subheading;
-        padding-left: 1em;
-        border-left: 4px solid $primary;
+       @extend %title;
     }
     .row{
         width: fit-content !important;

@@ -1,6 +1,5 @@
 .services-home{
-    padding: 9% 0em;
-    min-height: 100vh;
+    @extend %section;
     h2{
         font-weight: 700;
         font-size: 2em;

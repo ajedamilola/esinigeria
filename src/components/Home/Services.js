@@ -1,8 +1,11 @@
 import React from "react";
-import hardware from "../../images/hardwares.png";
-import website from "../../images/website.png";
-import backup from "../../images/internet_backup.png";
+
 import { MdArrowForward } from "@react-icons/all-files/md/MdArrowForward";
+import { StaticImage } from "gatsby-plugin-image";
+
+const hardware = "../../images/hardwares.png";
+const website = "../../images/website.png";
+const backup = "../../images/internet_backup.png";
 
 export default function Services() {
   return (
@@ -13,7 +16,7 @@ export default function Services() {
           {/* Oner Service */}
           <div className="row align-items-center">
             <div className="col-12 col-md-5 col-lg-6 text-center">
-              <img src={hardware} className="img-fluid" />
+              <StaticImage src={hardware}/>
             </div>
             <div className="col-12 col-md-7 col-lg-6">
               <h3 className="grad-light">Hardware Maintenace And Repairs</h3>
@@ -41,13 +44,13 @@ export default function Services() {
               <button className="btn btn-outline-primary">Details</button>
             </div>
             <div className="col-12 col-md-5 col-lg-6 order-0 order-md-1">
-              <img src={website} className="img-fluid" />
+              <StaticImage src={website} />
             </div>
           </div>
           {/* Anoither Service */}
           <div className="row align-items-center">
             <div className="col-12 col-md-5 col-lg-6 text-center text-md-start order-0">
-              <img src={backup} className="img-fluid" />
+              <StaticImage src={backup} />
             </div>
             <div className="col-12 col-md-7 col-lg-6 order-1">
               <h3 className="grad-light">Internet Support and Backup</h3>

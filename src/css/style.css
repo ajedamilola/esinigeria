@@ -11,6 +11,22 @@
   font-family: "roboto";
   src: url("../fonts/roboto-light.ttf");
 }
+.about-home, .features, .services-home {
+  padding: 9% 0em;
+  min-height: 100vh;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.about-home h2, .about-home .h2, .features h2, .features .h2 {
+  font-family: poppins, roboto;
+  font-weight: 700;
+  font-size: calc(1.5em + 1.4285714286vw);
+  padding-left: 1em;
+  border-left: 4px solid #13aa13;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -12351,10 +12367,6 @@ textarea.form-control-lg {
   font-family: poppins-light, roboto, "segoe ui", sans-serif;
 }
 
-.services-home {
-  padding: 9% 0em;
-  min-height: 100vh;
-}
 .services-home h2, .services-home .h2 {
   font-weight: 700;
   font-size: 2em;
@@ -12387,33 +12399,86 @@ textarea.form-control-lg {
   margin-bottom: 5%;
 }
 
-.features {
-  min-height: 90vh;
-  padding: 10% 0%;
-}
 .features .f-card {
   max-width: 400px;
   width: fit-content;
   margin: auto;
-}
-.features h2, .features .h2 {
-  font-family: poppins, roboto;
-  font-weight: 700;
-  font-size: calc(1.5em + 1.4285714286vw);
-  padding-left: 1em;
-  border-left: 4px solid #13aa13;
 }
 .features .row {
   width: fit-content !important;
   margin: auto;
 }
 
+.news-letter .input-group-text {
+  padding: 0px !important;
+}
+.news-letter .input-group {
+  width: 60%;
+  margin: auto;
+}
+.news-letter h3, .news-letter .h3 {
+  font-family: poppins;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.news-letter strong {
+  font-size: 2em;
+  font-family: roboto;
+}
+
+@media (max-width: 900px) {
+  .input-group {
+    width: 85% !important;
+  }
+
+  h3, .h3 {
+    font-size: 1.5rem !important;
+  }
+}
+.about-home p {
+  font-size: 1.1em;
+  font-family: roboto, poppins-light;
+  font-weight: 700;
+}
+.about-home menu {
+  width: fit-content;
+  background-color: white;
+  box-shadow: 1px 2px 10px 3px #ced4da;
+  padding: 0px !important;
+  margin-top: -5px !important;
+}
+.about-home menu .dropdown-item {
+  width: 100%;
+  padding: 0.55em 3em;
+  text-align: center;
+}
+
+footer h3, footer .h3 {
+  font-family: "roboto";
+  font-weight: 800;
+}
+footer .nav-item {
+  padding: 0.34rem 0rem;
+  font-size: 0.9rem;
+}
+footer address, footer .nav-item {
+  font-family: roboto;
+}
+footer .float-end {
+  font-size: 0.9rem;
+}
+
 .bg-fade {
   background-color: rgba(33, 37, 41, 0.5) !important;
 }
-
+.bg-l-dark {
+  background-color: #383f45 !important;
+}
 .bg-grad {
   background-image: linear-gradient(to right, #13aa13, #094e09);
+}
+.bg-darker {
+  background-color: #181b1e !important;
 }
 
 .rounded-border {
@@ -12424,7 +12489,8 @@ textarea.form-control-lg {
   border: 2px solid #13aa13 !important;
 }
 
-.grad, .grad-light {
+.grad,
+.grad-light {
   background-size: contain;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -12441,12 +12507,23 @@ textarea.form-control-lg {
 body {
   width: 100vw !important;
   overflow: overlay;
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
   width: 10px;
 }
 body::-webkit-scrollbar-thumb {
   background-color: #13aa13;
+  border-radius: 1em;
+}
+
+.form-control, .form-control:focus {
+  outline: 0 !important;
+  box-shadow: none;
+}
+.form-control:focus + .input-group-text, .form-control:focus {
+  border: 1px solid #13aa13;
+  transition: all 400ms ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

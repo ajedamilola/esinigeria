@@ -8,6 +8,9 @@ import Us from "../components/Home/Us";
 import { FaCertificate } from "@react-icons/all-files/fa/FaCertificate";
 import Services from "../components/Home/Services";
 import Features from "../components/Home/Features";
+import NewsLetter from "../components/Home/NewsLetter";
+import About from "../components/Home/KnowUs";
+import Footer from "../components/footer";
 
 export default function IndexPage() {
   return (
@@ -20,6 +23,9 @@ export default function IndexPage() {
       <Us />
       <Services />
       <Features />
+      <NewsLetter />
+      <About />
+      <Footer />
 	  <Helmet>
 		<script src="./bootstrap.min.js"></script>"
 	  </Helmet>

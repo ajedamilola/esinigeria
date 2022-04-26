@@ -5,36 +5,63 @@
 @import "who_we_are";
 @import "home_services";
 @import "features";
-.bg-fade {
-  background-color: rgba($dark, 0.5) !important;
+@import "news_letter_home";
+@import "about_home";
+@import "footer";
+
+.bg {
+  &-fade {
+    background-color: rgba($dark, 0.5) !important;
+  }
+  &-l-dark {
+    background-color: lighten($dark, 10) !important;
+  }
+  &-grad {
+    background-image: $gradient;
+  }
+  &-darker{
+    background-color: darken($dark,4) !important;
+  }
 }
-.bg-grad {
-  background-image: $gradient;
-}
+
 .rounded-border {
   border-radius: 2rem !important;
 }
 .border-1 {
   border: 2px solid $primary !important;
 }
-.grad,.grad-light {
+.grad,
+.grad-light {
   background-size: contain;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.grad{
-    background-image: $gradient;
+.grad {
+  background-image: $gradient;
 }
-.grad-light{
-    background-image: $gradient-light;
+.grad-light {
+  background-image: $gradient-light;
 }
-body{
-    width: 100vw !important;
-    overflow: overlay;
-    &::-webkit-scrollbar{
-        width: 10px;
-    }
-    &::-webkit-scrollbar-thumb{
-        background-color: $primary;
-    }
+body {
+  width: 100vw !important;
+  overflow: overlay;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    border-radius: 1em;
+  }
+}
+.form-control {
+  &,
+  &:focus {
+    outline: 0 !important;
+    box-shadow: none;
+  }
+  &:focus+.input-group-text,&:focus {
+    border: 1px solid $primary;
+    transition: all 400ms ease-in-out;
+  }
 }
