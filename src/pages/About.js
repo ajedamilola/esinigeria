@@ -8,9 +8,9 @@ import GridImages from "../components/About/GridImages";
 import Container from "../components/Container";
 import Intro from "../components/About/Intro";
 import { StaticImage } from "gatsby-plugin-image";
-import img from "../images/website.png";
 import Us from "../components/Home/Us";
 import BreadCrumb from "../components/BreadCrumb";
+import Clients from "../components/clients";
 
 export default function about() {
   return (
@@ -52,6 +52,7 @@ export default function about() {
             dolor irure adipisicing ut minim proident anim esse.
           </p>
         </Content>
+
         <GridImages
           images={[
             <StaticImage src="../../images/icon.png" className="h-100 w-100" />,
@@ -59,7 +60,7 @@ export default function about() {
             <StaticImage src="../../images/icon.png" className="img" />,
           ]}
         />
-        <Us />
+
         <Content title="Company profile" titlePos="right">
           <p>
             Fugiat magna commodo et Lorem ex nostrud. Ullamco aliquip deserunt
@@ -72,10 +73,13 @@ export default function about() {
             consectetur.
           </p>
         </Content>
+
+        <Clients className="py-7"/>
       </Container>
       <Footer />
       <Helmet>
-        <script src="../bootstrap.min.js"></script>"
+        <script src="../bootstrap.min.js"></script>
+        <title>About US | Esi Nigeria</title>
       </Helmet>
     </div>
   );

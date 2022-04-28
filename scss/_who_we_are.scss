@@ -2,6 +2,8 @@
   @extend %section;
   min-height: 100vh;
   padding: 10% 0em;
+  width: 100vw !important;
+  overflow-x: hidden !important;
  
   h2 {
     font-family: "poppins";

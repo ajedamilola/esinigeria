@@ -1,7 +1,12 @@
 @import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+//general
 @import "top-section";
 @import "navbar";
+@import "clients";
+
+//homepage
 @import "who_we_are";
 @import "home_services";
 @import "features";
@@ -11,6 +16,9 @@
 
 //Anout Page
 @import "About/content";
+
+//services Page
+@import "Services/card";
 
 
 
@@ -48,7 +56,6 @@
   background-image: $gradient-light;
 }
 body {
-  width: 100vw !important;
   overflow: overlay;
   scroll-behavior: smooth;
   &::-webkit-scrollbar {

@@ -5,7 +5,7 @@
   background-color: $dark;
 }
 .topbar {
-  &-home,&-about {
+  &-home,&-about,&-services {
     @extend %topbar;
   }
   &-home {
@@ -14,7 +14,13 @@
   }
   &-about {
     background-image: url("../images/topbar-bg.jpg");
-    min-height: 50vh;
+    height: 50vh;
+    max-height: 400px !important;
+  }
+  &-services {
+    background-image: url("../images/topbar-bg.jpg");
+    height: 50vh;
+    max-height: 400px !important;
   }
   .intro {
     &-about{

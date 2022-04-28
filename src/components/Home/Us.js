@@ -10,11 +10,6 @@ export default function Us() {
   return (
     <div className="wwa bg-light">
       <Container>
-        <BreadCrumb
-          pages={[{ title: "Home", to: "/", active: true }]}
-          className="bg-light"
-        />
-
         <h2>
           <span className="text-primary">O</span>UR{" "}
           <span className="text-primary">F</span>OCUS

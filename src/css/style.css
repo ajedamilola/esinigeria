@@ -12298,7 +12298,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.topbar-home, .topbar-about {
+.topbar-home, .topbar-about, .topbar-services {
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
@@ -12311,7 +12311,13 @@ textarea.form-control-lg {
 }
 .topbar-about {
   background-image: url("../images/topbar-bg.jpg");
-  min-height: 50vh;
+  height: 50vh;
+  max-height: 400px !important;
+}
+.topbar-services {
+  background-image: url("../images/topbar-bg.jpg");
+  height: 50vh;
+  max-height: 400px !important;
 }
 .topbar .intro-about {
   margin-top: 10vh;
@@ -12367,9 +12373,20 @@ textarea.form-control-lg {
   padding: 0.3em;
 }
 
+.clients h2, .clients .h2 {
+  font-family: poppins;
+  color: #4b5c52;
+}
+.clients .client img {
+  filter: grayscale() !important;
+  max-width: 100px !important;
+}
+
 .wwa {
   min-height: 100vh;
   padding: 10% 0em;
+  width: 100vw !important;
+  overflow-x: hidden !important;
 }
 .wwa h2, .wwa .h2 {
   font-family: "poppins";
@@ -12456,7 +12473,7 @@ textarea.form-control-lg {
 .about-home p {
   font-size: 1.1em;
   font-family: roboto, poppins-light;
-  font-weight: 700;
+  font-weight: 500;
 }
 .about-home menu {
   width: fit-content;
@@ -12495,10 +12512,73 @@ footer .float-end {
   padding: 0em 0.8em;
   font-weight: 900;
   text-transform: uppercase;
-  color: #086008;
+  color: #10be10;
 }
 .about-content p {
   font-family: poppins-light;
+}
+
+.card-service {
+  width: auto;
+}
+.card-service h1, .card-service .h1 {
+  font-size: 2em;
+  padding: 0.5em 0em;
+}
+.card-service h2, .card-service .h2 {
+  padding: 0.5em 0em;
+  font-size: 1.5em;
+}
+.card-service h2, .card-service .h2, .card-service h1, .card-service .h1 {
+  font-family: poppins;
+}
+.card-service p {
+  font-family: poppins-light;
+}
+.card-service .img {
+  max-width: 8em !important;
+}
+
+.s-1 {
+  background-color: #086008;
+  height: 100% !important;
+  padding: 0.5em;
+}
+
+.s-2 {
+  background-color: #4e864e;
+}
+
+.s-3 {
+  background-color: #4e8670;
+}
+
+.s-4 {
+  background-color: #7d864e;
+}
+
+.s-5 {
+  background-color: #4e6886;
+}
+
+.s-6 {
+  background-color: #4e864e;
+}
+
+.s-7 {
+  background-color: #4e864e;
+}
+
+.s-8 {
+  background-color: #4e864e;
+}
+
+.s-9 {
+  background-color: #4e864e;
+}
+
+.s-10 {
+  background-color: #4e864e;
 }
 
 .bg-fade {
@@ -12538,7 +12618,6 @@ footer .float-end {
 }
 
 body {
-  width: 100vw !important;
   overflow: overlay;
   scroll-behavior: smooth;
 }

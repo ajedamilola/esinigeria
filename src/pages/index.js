@@ -12,6 +12,8 @@ import NewsLetter from "../components/Home/NewsLetter";
 import About from "../components/Home/KnowUs";
 import Footer from "../components/footer";
 import Container from "../components/Container";
+import BreadCrumb from "../components/BreadCrumb";
+import Clients from "../components/Clients";
 
 export default function IndexPage() {
   return (
@@ -21,14 +23,23 @@ export default function IndexPage() {
         <Intro />
         <TrustNote />
       </Topbar>
+        <BreadCrumb
+          pages={[{ title: "Home", to: "/", active: true }]}
+          className="py-2 bg-light px-4 px-md-7"
+        />
+
       <Us />
       <Services />
       <Features />
       <NewsLetter />
       <About />
+      <Container className="pb-7">
+        <Clients />
+      </Container>
       <Footer />
       <Helmet>
-        <script src="./bootstrap.min.js"></script>"
+        <script src="./bootstrap.min.js"></script>
+        <title>Esi Nigeria | Elitist Solution International</title>
       </Helmet>
     </div>
   );
@@ -45,10 +56,10 @@ const TrustNote = () => (
       </div>
       <div className="position-relative">
         <FaCertificate
-          size={80}
-          color="red"
+          size={65}
+          color="var(--bs-info)"
           className="position-absolute"
-          style={{ right: 0, transform: "translateY(-55px)" }}
+          style={{ right: 0, transform: "translateY(-45px)" }}
         />
       </div>
     </Container>

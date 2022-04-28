@@ -1,0 +1,12 @@
+.clients {
+    h2{
+        font-family: poppins;
+        color: lighten($dark,20);
+    }
+  .client {
+    img {
+      filter: #{"grayscale()"} !important;
+      max-width: 100px !important;
+    }
+  }
+}

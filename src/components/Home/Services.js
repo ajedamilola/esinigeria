@@ -3,6 +3,7 @@ import React from "react";
 import { MdArrowForward } from "@react-icons/all-files/md/MdArrowForward";
 import { StaticImage } from "gatsby-plugin-image";
 import Container from "../Container";
+import { Link } from "gatsby";
 
 const hardware = "../../images/hardwares.png";
 const website = "../../images/website.png";
@@ -10,14 +11,14 @@ const backup = "../../images/internet_backup.png";
 
 export default function Services() {
   return (
-    <div className="bg-dark services-home text-light  position-relative">
+    <div className="bg-dark services-home text-light  position-relative" id="services">
       <Container>
         <h2 className="text-center">We Offer Wide Range of Services</h2>
         <div className="pt-5">
           {/* Oner Service */}
           <div className="row align-items-center">
             <div className="col-12 col-md-5 col-lg-6 text-center">
-              <StaticImage src={hardware}/>
+              <StaticImage src={hardware} />
             </div>
             <div className="col-12 col-md-7 col-lg-6 text-center text-md-start ">
               <h3 className="grad-light">Hardware Maintenace And Repairs</h3>
@@ -72,9 +73,11 @@ export default function Services() {
           className="position-absolute bottom-0 py-2 text-center w-100"
           style={{ left: 0 }}
         >
-          <button className="btn btn-primary mx-auto">
-            Explore More <MdArrowForward />
-          </button>
+          <Link to="/services">
+            <button className="btn btn-primary mx-auto">
+              Explore More <MdArrowForward />
+            </button>
+          </Link>
         </div>
       </Container>
     </div>

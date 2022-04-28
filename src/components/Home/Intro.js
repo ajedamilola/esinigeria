@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 export default function Intro() {
   return (
@@ -12,7 +13,9 @@ export default function Intro() {
           consequat enim anim quis. Eiusmod est exercitation elit ipsum.
         </p>
         <button className="btn btn-outline-primary">Company Profile</button>
-        <button className="btn btn-primary ms-1">Services</button>
+        <Link to="#services">
+          <button className="btn btn-primary ms-1">Services</button>
+        </Link>
       </div>
     </div>
   );
