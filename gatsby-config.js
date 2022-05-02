@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: ".",
+  pathPrefix: "esinigeria",
   siteMetadata: {
     title: `Elitist Solution International`,
     siteUrl: `https://www.esinigeria.com.ng`,
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/dir`,
+        path: `${__dirname}/src/pages/service`,
       },
     },
     {

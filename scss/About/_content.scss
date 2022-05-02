@@ -1,14 +1,31 @@
-.about-content{
-    h2{
-        font-family: poppins;
-        font-size: $subheading;
-        padding:0em .8em;
-        font-weight: 900;
-        text-transform: uppercase;
-        color: $primary;
-    }
-    p{
-        font-family: poppins-light;
-    }
-    padding: 10% 0px;
+.about-content {
+  h2 {
+    font-family: open-sans, poppins;
+    font-size: $subheading-sm;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: $primary;
+  }
+  p {
+    font-family: poppins-light !important;
+  }
+  .bg-l {
+    background-color: rgba(204, 204, 204, 0.808);
+  }
+  .bg-d {
+    background-color: rgba(85, 85, 85, 0.836);
+  }
+}
+.info {
+  font-family: poppins-light !important;
+  font-size: 1em !important;
+}
+.underline {
+  &{
+    height: 2px;
+    background-color: gray;
+  }
+  &-primary {
+    border-bottom: 3px solid $primary;
+  }
 }

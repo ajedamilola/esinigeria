@@ -20,14 +20,16 @@ $spacers: (
   5: $spacer * 3,
   6: $spacer * 4.5,
   7: $spacer * 6,
+  8: $spacer * 8,
   auto: auto,
 ) !default;
 
 $primary: rgb(16, 190, 16);
-$dark: rgb(29, 36, 32);
+$dark: rgb(29, 34, 31);
 $headline: calc(1.5em + 100vw / 30);
 $heading: calc(1.5em + 100vw / 50);
 $subheading: calc(1.5em + 100vw / 70);
+$subheading-sm: calc(1.5em + 100vw / 86);
 
 $gradient: linear-gradient(to right, $primary, darken($primary, 20));
 $gradient-light: linear-gradient(
@@ -39,6 +41,13 @@ $breadcrumb-divider: ">";
 %section {
   padding: 9% 0em;
   min-height: 100vh;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+%section-sm {
+  padding: 9% 0em;
+  min-height: 60vh;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;

@@ -1,0 +1,21 @@
+$borders: (top-left, top-right, bottom-left, bottom-right);
+.rounded {
+  &-border {
+    & {
+      border-radius: 2rem !important;
+    }
+    &-sm {
+      border-radius: 1rem !important;
+    }
+  }
+  @each $side in $borders {
+    &-#{$side} {
+      & {
+        #{"border-"+$side+"-radius"}: 2rem !important;
+      }
+    }
+  }
+}
+.border-1 {
+  border: 2px solid $primary !important;
+}

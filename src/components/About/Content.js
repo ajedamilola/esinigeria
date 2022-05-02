@@ -1,16 +1,42 @@
 import React from "react";
 
-export default function Content({ title, children,titlePos="left"||"right",light=false }) {
-    var style = titlePos=="left"?{
-        borderLeft:"4px solid var(--bs-primary)"
-    }:{
-        borderRight:"4px solid var(--bs-primary)"
-    }
+export default function Content({
+  title,
+  children,
+  titlePos = "left" || "right",
+  light = true,
+  className,
+}) {
   return (
-    <div className="about-content">
-        <h2  style={{...style,textAlign:titlePos}}>{title}</h2>
-        <p className={`py-2 ${light?"text-light":"text-dark"}`}>{children}</p>
-        <hr />
+    <div className={`about-content ${className}`}>
+      <h2
+        className={`${
+          titlePos !== "center" ? "d-block" : "d-none"
+        } text-${titlePos}`}
+      >
+        {title}
+      </h2>
+      <div
+        className={`${
+          titlePos == "center" ? "d-flex" : "d-none"
+        } justify-content-around flex-row align-items-center`}
+      >
+        <div className="col underline"></div>
+        <div className="col flex-grow-1">
+          <h2 className="text-center pb-4">{title}</h2>
+        </div>
+        <div className="col underline"></div>
+      </div>
+      <div
+        className={`bg-${light ? "l" : "d"} p-1 p-md-3 p-lg-4 rounded-top-${
+          titlePos === "right" ? "left" : "right"
+        } rounded-bottom-${titlePos === "right" ? "left" : "right"} ${
+          titlePos === "center" ? "rounded-border" : ""
+        }`}
+        style={{ [`border-${titlePos}`]: "4px solid var(--bs-primary)" }}
+      >
+        <p className={`${light ? "text-dark" : "text-white"}`}>{children}</p>
+      </div>
     </div>
   );
 }

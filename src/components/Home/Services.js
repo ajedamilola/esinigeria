@@ -11,7 +11,10 @@ const backup = "../../images/internet_backup.png";
 
 export default function Services() {
   return (
-    <div className="bg-dark services-home text-light  position-relative" id="services">
+    <div
+      className="bg-dark services-home text-light  position-relative"
+      id="services"
+    >
       <Container>
         <h2 className="text-center">We Offer Wide Range of Services</h2>
         <div className="pt-5">
@@ -79,6 +82,7 @@ export default function Services() {
             </button>
           </Link>
         </div>
+       
       </Container>
     </div>
   );

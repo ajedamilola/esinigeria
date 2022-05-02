@@ -14,10 +14,11 @@ import Footer from "../components/footer";
 import Container from "../components/Container";
 import BreadCrumb from "../components/BreadCrumb";
 import Clients from "../components/Clients";
+import Wave from "../components/Wave";
 
 export default function IndexPage() {
   return (
-    <div>
+    <div className="bg-light">
       <Topbar>
         <Navbar />
         <Intro />
@@ -29,9 +30,13 @@ export default function IndexPage() {
         />
 
       <Us />
+      <Wave fill="var(--bs-dark)" t={3} />
       <Services />
+      <Wave fill="var(--bs-dark)" t={2} />
       <Features />
+      <Wave fill="var(--bs-dark)" rotation="90"/>
       <NewsLetter />
+      <Wave fill="var(--bs-dark)" t={5}/>
       <About />
       <Container className="pb-7">
         <Clients />

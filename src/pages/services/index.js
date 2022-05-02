@@ -1,14 +1,16 @@
 import React from "react";
 import Helmet from "react-helmet";
-import Topbar from "../components/Services/Topbar";
-import Navbar from "../components/navbar";
-import Container from "../components/Container";
-import BreadCrumb from "../components/BreadCrumb";
-import Intro from "../components/Services/Intro";
-import CardLg from "../components/Services/CardLg";
-import Card from "../components/Services/Card";
+import Topbar from "../../components/Services/Topbar";
+import Navbar from "../../components/navbar";
+import Container from "../../components/Container";
+import BreadCrumb from "../../components/BreadCrumb";
+import Intro from "../../components/Services/Intro";
+import CardLg from "../../components/Services/CardLg";
+import Card from "../../components/Services/Card";
 import { StaticImage } from "gatsby-plugin-image";
-import Footer from "../components/footer";
+import Footer from "../../components/footer";
+import "../../css/style.css";
+
 
 export default function Services() {
   return (
