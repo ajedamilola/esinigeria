@@ -10,7 +10,7 @@ export default function Intro() {
             <h2>About Elitist Solution International</h2>
           </div>
           <div className="col-2 d-none d-md-block">
-            <StaticImage src="../../images/icon.png" />
+            <StaticImage src="../../images/logo.png" />
           </div>
         </div>
       </div>

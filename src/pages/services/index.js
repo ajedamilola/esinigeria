@@ -35,16 +35,19 @@ export default function Services() {
             <div className="col-12 col-md-8 py-2 py-md-0" id="service">
               <div className="row g-2 align-items-stretch">
                 <div className="col-6 col-md-4">
-                  <Card index={0} name="One Service Name" desc="Lorem Ipsum blah blah stuff" img={<StaticImage src="../../images/hardwares.png" class="img" />}/>
+                  <Card index={0} name="HARDWARE REPAIRS AND MAINTENANCE" img={<StaticImage src="../../images/hardwares.png" class="img" />}/>
                 </div>
                 <div className="col-6 col-md-4">
-                  <Card index={1} name="One Service Name" desc="Lorem Ipsum blah blah stuff" img={<StaticImage src="../../images/internet_backup.png" class="img" />}/>
+                  <Card index={1} name="DESIGN, IMPLEMENTATION AND SUPPORT OF A DYNAMIC WEBSITE" img={<StaticImage src="../../images/internet_backup.png" class="img" />}/>
                 </div>
                 <div className="col-6 col-md-4">
-                  <Card index={2} name="One Service Name" desc="Lorem Ipsum blah blah stuff" img={<StaticImage src="../../images/hardwares.png" class="img" />}/>
+                  <Card index={2} name="CONNECTIVITY AND NETWORK SECURITY" img={<StaticImage src="../../images/hardwares.png" class="img" />}/>
                 </div>
                 <div className="col-6 col-md-4">
-                  <Card index={3} name="One Service Name" desc="Lorem Ipsum blah blah stuff" img={<StaticImage src="../../images/website.png" class="img" />}/>
+                  <Card index={3} name="INTERNET SUPPORT/ BACK-UP" img={<StaticImage src="../../images/website.png" class="img" />}/>
+                </div>
+                <div className="col-6 col-md-4">
+                  <Card index={4} name="TRAINING AND CONSULTING SERVICES" img={<StaticImage src="../../images/website.png" class="img" />}/>
                 </div>
               </div>
             </div>

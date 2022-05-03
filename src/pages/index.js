@@ -18,34 +18,35 @@ import Wave from "../components/Wave";
 
 export default function IndexPage() {
   return (
-    <div className="bg-light">
+    <div>
       <Topbar>
         <Navbar />
         <Intro />
         <TrustNote />
       </Topbar>
-        <BreadCrumb
-          pages={[{ title: "Home", to: "/", active: true }]}
-          className="py-2 bg-light px-4 px-md-7"
-        />
-
-      <Us />
-      <Wave fill="var(--bs-dark)" t={3} />
-      <Services />
-      <Wave fill="var(--bs-dark)" t={2} />
-      <Features />
-      <Wave fill="var(--bs-dark)" rotation="90"/>
-      <NewsLetter />
-      <Wave fill="var(--bs-dark)" t={5}/>
-      <About />
-      <Container className="pb-7">
-        <Clients />
-      </Container>
-      <Footer />
-      <Helmet>
-        <script src="./bootstrap.min.js"></script>
-        <title>Esi Nigeria | Elitist Solution International</title>
-      </Helmet>
+      <BreadCrumb
+        pages={[{ title: "Home", to: "/", active: true }]}
+        className="py-2 bg-light px-4 px-md-7"
+      />
+      <div className="bg-light">
+        <Us />
+        <Wave fill="var(--bs-dark)" t={3} />
+        <Services />
+        <Wave fill="var(--bs-dark)" t={2} />
+        <Features />
+        <Wave fill="var(--bs-dark)" rotation="90" />
+        <NewsLetter />
+        <Wave fill="var(--bs-dark)" t={5} />
+        <About />
+        <Container className="pb-7">
+          <Clients />
+        </Container>
+        <Footer />
+        <Helmet>
+          <script src="./bootstrap.min.js"></script>
+          <title>Esi Nigeria | Elitist Solution International</title>
+        </Helmet>
+      </div>
     </div>
   );
 }

@@ -7,6 +7,11 @@
     img {
       filter: #{"grayscale()"} !important;
       max-width: 100px !important;
+      transition: all 400ms ease-in-out;
+      &:hover{
+        filter: none !important;
+        transition: all 400ms ease-in-out;
+      }
     }
   }
 }

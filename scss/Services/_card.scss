@@ -9,6 +9,7 @@
     h2{
         padding: 0.5em 0em;
         font-size: 1.5em;
+        text-align: center;
     }
     h2,h1 {
       font-family: poppins;
@@ -33,8 +34,8 @@ $colors:(
     rgb(78, 134, 112),
     rgb(125, 134, 78),
     rgb(78, 104, 134),
-    rgb(78, 134, 78),
-    rgb(78, 134, 78),
+    rgb(78, 121, 134),
+    rgb(134, 89, 78),
     rgb(78, 134, 78),
     rgb(78, 134, 78),
     rgb(78, 134, 78),
@@ -44,4 +45,9 @@ $colors:(
     .s-#{$i}{
         background-color: list.nth($colors,$i);
     }
+}
+@media (max-width:900px) {
+  h2{
+    font-size: 1.2em !important;
+  }
 }

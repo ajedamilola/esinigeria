@@ -51,8 +51,10 @@ export default function Wave({ fill = "white", rotation = "0deg", t = 1 }) {
           ></path>
         </svg>
       );
+      break;
     default:
       <svg></svg>;
+      break;
   }
   return wave;
 }

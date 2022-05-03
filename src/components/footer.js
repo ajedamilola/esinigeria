@@ -25,34 +25,22 @@ export default function Footer() {
               info@esinigeria.com.ng
             </address>
           </div>
-          <div className="col">
-            <ul className="nav justify-content-end">
-              <li className="nav-item">
-                <Link className="nav-link text-white">
+          <div className="col text-center text-lg-end">
+                <Link className="text-white px-1">
                   <W size={25} />
                 </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white">
+                <Link className="text-white px-1">
                   <F size={25} />
                 </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white">
+                <Link className="text-white px-1">
                   <I size={25} />
                 </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white">
+                <Link className="text-white px-1">
                   <Phone size={25} />
                 </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white">
+                <Link className="text-white px-1">
                   <Mail size={25} />
                 </Link>
-              </li>
-            </ul>
           </div>
         </div>
       </Container>
@@ -61,19 +49,28 @@ export default function Footer() {
           <h3>
             <b>Links</b>
           </h3>
-          <div className="row my-3">
+          <div className="row my-3 gy-3 justify-content-center justify-content-md-start">
             <div className="col-6 col-md-3">
               <ul className="nav flex-column">
-                <li className="nav-item">Company Profile</li>
+                <li className="nav-item">Home</li>
                 <li className="nav-item">Company History</li>
-                <li className="nav-item">CLients</li>
+                <li className="nav-item">Company Profile</li>
+                <li className="nav-item">Services</li>
               </ul>
             </div>
             <div className="col-6 col-md-3">
               <ul className="nav flex-column">
-                <li className="nav-item">Company Profile</li>
-                <li className="nav-item">Company History</li>
-                <li className="nav-item">CLients</li>
+                <li className="nav-item">Hardware Repairs </li>
+                <li className="nav-item">Website Design and Implementation</li>
+                <li className="nav-item">Consulting Services</li>
+                <li className="nav-item">Internet Backup and Support</li>
+              </ul>
+            </div>
+            <div className="col-12 col-md-3">
+              <ul className="nav flex-column">
+                <li className="nav-item">Facebook </li>
+                <li className="nav-item">Twitter</li>
+                <li className="nav-item">Instagram</li>
               </ul>
             </div>
           </div>

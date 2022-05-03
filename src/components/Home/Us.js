@@ -25,9 +25,9 @@ export default function Us() {
                 <span className="grad">Mission </span>
               </h3>
               <p className="text-muted text-center text-md-start">
-                Laboris excepteur sint adipisicing cillum. Amet incididunt
-                commodo incididunt dolore ad aute aliquip. Sint reprehenderit
-                ullamco velit aliqua.
+                Constantly seeking ways to meet the needs of our clients
+                impacting Africa and the World with the latest innovations in
+                the I.T. world
               </p>
             </div>
           </div>
@@ -44,9 +44,14 @@ export default function Us() {
               </div>
 
               <p className="text-muted">
-                Laboris excepteur sint adipisicing cillum. Amet incididunt
-                commodo incididunt dolore ad aute aliquip. Sint reprehenderit
-                ullamco velit aliqua.
+                Our core values which we consider critical to our business
+                success include:
+                <ul className="list-group">
+                  <li className="list-group-item">Honesty</li>
+                  <li className="list-group-item bg-l-dark text-light">Excellence</li>
+                  <li className="list-group-item">Efficiency</li>
+                  <li className="list-group-item bg-l-dark text-light">Professionalism</li>
+                </ul>
               </p>
             </div>
           </div>
@@ -60,9 +65,7 @@ export default function Us() {
                 <span className="grad">Vision</span>
               </h3>
               <p className="text-muted  text-center text-md-end">
-                Laboris excepteur sint adipisicing cillum. Amet incididunt
-                commodo incididunt dolore ad aute aliquip. Sint reprehenderit
-                ullamco velit aliqua.
+              To build a global brand which continuously provides world class Information Technology (I.T.) products and services relevant in today’s business world.
               </p>
             </div>
           </div>

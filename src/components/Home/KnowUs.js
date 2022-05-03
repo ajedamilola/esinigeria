@@ -12,18 +12,11 @@ export default function About() {
         <div className="row align-items-center">
           <div className="col">
             <p>
-              Incididunt duis esse tempor eiusmod adipisicing do labore enim
-              proident amet est sint. Tempor officia minim duis ad magna Lorem
-              sint fugiat non in. Dolore voluptate duis est anim. Tempor laboris
-              quis aute dolor laboris quis ut labore. Incididunt deserunt
-              excepteur eu eiusmod sit id culpa nisi. Nostrud nostrud non
-              commodo ea id adipisicing est et non aute exercitation ex fugiat
-              ullamco. Cillum culpa magna exercitation voluptate adipisicing
-              commodo consequat ad quis sint ut do.
+            ESI, Nigeria is a brand with a global perspective, which focuses on information technology services and products. ESI was borne out of the desire to create an indigenous brand that will meet the I.T needs of organizations and individuals both locally and globally by providing first class services, products and innovations while....
             </p>
           </div>
-          <div className="col-3 d-none d-md-block">
-            <StaticImage src="../../images/icon.png" />
+          <div className="col-4 d-none d-md-block">
+            <StaticImage src="../../images/logo.png" />
           </div>
         </div>
         <div className="row align-items-start" style={{ width: "fit-content" }}>
@@ -39,9 +32,9 @@ export default function About() {
           </div>
           <div className="col">
             <menu className="collapse" id="sub-about-menu">
-                <Link className="dropdown-item" to="/">Company Profile</Link>
-                <Link className="dropdown-item" to="/">Company History</Link>
-                <Link className="dropdown-item" to="/">Popular Clients</Link>
+                <Link className="dropdown-item" to="/about#profile">Company Profile</Link>
+                <Link className="dropdown-item" to="/about#history">Company History</Link>
+                <Link className="dropdown-item" to="/" download>Download Profile</Link>
             </menu>
           </div>
         </div>

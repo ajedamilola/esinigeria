@@ -4,15 +4,16 @@ import Helmet from "react-helmet";
 import Topbar from "../components/About/topbar";
 import Content from "../components/About/Content";
 import Footer from "../components/footer";
-import GridImages from "../components/About/GridImages";
+// import GridImages from "../components/About/GridImages";
 import Container from "../components/Container";
 import Intro from "../components/About/Intro";
-import { StaticImage } from "gatsby-plugin-image";
 import "../css/style.css";
 import BreadCrumb from "../components/BreadCrumb";
 import Clients from "../components/clients";
-import US from "../components/Home/Us";
+import Us from "../components/Home/Us";
 import Wave from "../components/Wave";
+import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 export default function about() {
   return (
@@ -32,33 +33,33 @@ export default function about() {
 
         <Content className="py-6">
           <p className="text-center text-muted">
-            Enim fugiat laboris fugiat elit quis eu excepteur reprehenderit aute
-            Lorem mollit ad esse exercitation. Occaecat incididunt commodo eu
-            mollit exercitation. Enim fugiat laboris fugiat elit quis eu
-            excepteur reprehenderit aute
+            ESI was borne out of the desire to create an indigenous brand that
+            will meet the I.T needs of organizations and individuals both
+            locally and globally by providing first class services, products and
+            innovations while creating an avenue for talented individuals to
+            express themselves technologically
           </p>
         </Content>
 
-        <div className="row gx-5 py-8">
-          <div className="col-12 col-md-4 bg-primary"></div>
+        <div className="row gx-5 py-8 align-items-center" id="profile">
+          <div className="col-12 col-md-4">
+            <StaticImage src="../../images/logo.png" className="mt-2" />
+          </div>
           <div className="col-12 col-md-8">
-            <Content title="company Profile" titlePos="left">
+            <Content title="Company Profile" titlePos="left">
               <p>
-                Pariatur ut magna aliquip velit qui nisi nulla nulla magna eu
-                duis in magna labore. Id occaecat do non mollit reprehenderit
-                qui ad commodo. Tempor voluptate tempor est pariatur consequat
-                officia officia dolore eiusmod sunt eiusmod enim ea. Elit
-                proident esse ipsum dolor sunt reprehenderit do est aliqua id
-                do. Aliquip elit reprehenderit voluptate nisi amet elit do.
-                Fugiat ipsum id laborum minim consequat anim sunt. Nisi nisi
+              The company ELITIST SOLUTION INTERNATIONAL registered as a business name with the Corporate Affairs Commission (CAC) with a capital sum of $4000. The money was used by 
+              <Link to="https://facebook.com/josephneem">Joseph Ojochenemi</Link> 
+              (the founder) to secure a partnering office in Yaba and consequently in Apapa, registration of the business and sustaining team members.
               </p>
+              <br />
             </Content>
           </div>
         </div>
       </Container>
 
       <Wave fill="var(--bs-dark)" t={4} />
-      <div className="bg-dark">
+      <div className="bg-dark" id="history">
         <Container>
           <Content
             className="py-6"
@@ -67,22 +68,21 @@ export default function about() {
             light={false}
           >
             <p className="text-center">
-              Enim fugiat laboris fugiat elit quis eu excepteur reprehenderit
-              aute Lorem mollit ad esse exercitation. Occaecat incididunt
-              commodo eu mollit exercitation. Enim fugiat laboris fugiat elit
-              quis eu excepteur reprehenderit aute at officia officia dolore
-              eiusmod sunt eiusmod enim ea. Elit proident esse ipsum dolor sunt
-              reprehenderit do est aliqua id do. Aliquip elit reprehenderit
-              voluptate nisi amet elit do. Fugiat ipsum id laborum minim
-              consequat anim sunt. Nisi nisi Enim fugiat laboris fugiat elit
-              quis eu excepteur reprehenderit aute Lorem mollit ad esse
-              exercitation. Occaecat incididunt commodo eu mollit exercitation.
-              Enim fugiat laboris fugiat elit quis eu excepteur reprehenderit
-              aute at officia officia dolore eiusmod sunt eiusmod enim ea. Elit
-              proident esse ipsum dolor sunt reprehenderit do est aliqua id do.
-              Aliquip elit reprehenderit voluptate nisi amet elit do. Fugiat
-              ipsum id laborum minim consequat anim sunt. Nisi nisi
-              <button className="btn btn-outline-primary mt-3">See All</button>
+              Elitist Solution International also known as ESI, Nigeria started
+              in January 2015 as an ICT support business with our first office
+              in Marina before we moved to Apapa. Although, we still maintain an
+              office presence in Yaba, Lagos. ESI, Nigeria is a brand with a
+              global perspective, which focuses on information technology
+              services and products. ESI was borne out of the desire to create
+              an indigenous brand that will meet the I.T needs of organizations
+              and individuals both locally and globally by providing first class
+              services, products and innovations while creating an avenue for
+              talented individuals to express themselves technologically
+              (Elitist Hub). Even as we have a global view, we seek to add value
+              to the present I.T services in the Nigerian environment through
+              innovations and training so; we are determined to give the best
+              service ever.
+              <br />
             </p>
           </Content>
         </Container>
@@ -97,7 +97,7 @@ export default function about() {
             <StaticImage src="../../images/icon.png" className="img" />,
           ]}
         /> */}
-      <US />
+      <Us />
       <Container>
         <Clients className="py-7" />
       </Container>

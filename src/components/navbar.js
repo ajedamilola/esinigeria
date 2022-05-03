@@ -2,17 +2,9 @@ import { Link } from "gatsby";
 import React from "react";
 import Container from "../components/Container";
 
-const loadAnim = (
-  <div className="fixed-top">
-    <div
-      className="progress-bar progress-bar-striped progress progress-bar-animated"
-      style={{ height: 10 }}
-    ></div>
-  </div>
-);
-export default function Navbar() {
+export default function Navbar({filled=false}) {
   return (
-      <nav className="navbar navbar-dark bg-fade navbar-expand-lg justify-self-start">
+      <nav className={`navbar navbar-dark ${filled?"bg-dark":"bg-fade"} navbar-expand-lg justify-self-start`}>
         <Container>
           <Link className="navbar-brand">ESI Nigeria</Link>
           <button
@@ -35,7 +27,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/About" className="nav-link">
+                <Link to="/about" className="nav-link">
                   About
                 </Link>
               </li>
