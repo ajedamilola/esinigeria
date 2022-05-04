@@ -48,9 +48,9 @@ export default function Us() {
                 success include:
                 <ul className="list-group">
                   <li className="list-group-item">Honesty</li>
-                  <li className="list-group-item bg-l-dark text-light">Excellence</li>
+                  <li className="list-group-item bg-primary text-light">Excellence</li>
                   <li className="list-group-item">Efficiency</li>
-                  <li className="list-group-item bg-l-dark text-light">Professionalism</li>
+                  <li className="list-group-item bg-primary text-light">Professionalism</li>
                 </ul>
               </p>
             </div>

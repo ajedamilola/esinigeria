@@ -5,6 +5,9 @@
     font-weight: 900;
     text-transform: capitalize;
     color: $primary;
+    &.text-center{
+      color: $white;
+    }
   }
   p {
     font-family: poppins-light !important;

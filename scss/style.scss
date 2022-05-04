@@ -37,7 +37,6 @@
   }
 }
 
-
 .grad,
 .grad-light {
   background-size: contain;
@@ -45,7 +44,10 @@
   -webkit-text-fill-color: transparent;
 }
 .grad {
-  background-image: $gradient;
+  &,
+  &-bg {
+    background-image: $gradient !important;
+  }
 }
 .grad-light {
   background-image: $gradient-light;
@@ -57,7 +59,8 @@ body {
     width: 10px;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $primary;
+    background-color: lighten($primary,20);
+    border: 1px solid rgba($dark, 0.5);
     border-radius: 1em;
   }
 }

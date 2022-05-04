@@ -12,8 +12,8 @@ export default function Footer() {
   return (
     <footer className="bg-dark text-light pt-5">
       <Container>
-        <div className="row align-items-center">
-          <div className="col">
+        <div className="row align-items-center gy-4">
+          <div className="col-12 col-md-6">
             <Link className="navbar-brand">ESI Nigeria</Link>
             <p>
                 Lorem ipsum and all whats not
@@ -25,7 +25,7 @@ export default function Footer() {
               info@esinigeria.com.ng
             </address>
           </div>
-          <div className="col text-center text-lg-end">
+          <div className="col-12 col-md-6 text-center text-lg-end">
                 <Link className="text-white px-1">
                   <W size={25} />
                 </Link>

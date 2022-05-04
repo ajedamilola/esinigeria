@@ -30,13 +30,13 @@ export default function IndexPage() {
       />
       <div className="bg-light">
         <Us />
-        <Wave fill="var(--bs-dark)" t={3} />
+        <Wave fill="var(--bs-primary)" t={3} />
         <Services />
-        <Wave fill="var(--bs-dark)" t={2} />
+        <Wave fill="var(--bs-primary)" t={2} />
         <Features />
-        <Wave fill="var(--bs-dark)" rotation="90" />
+        <Wave fill="var(--bs-primary)" rotation="90" />
         <NewsLetter />
-        <Wave fill="var(--bs-dark)" t={5} />
+        <Wave fill="var(--bs-primary)" t={5} />
         <About />
         <Container className="pb-7">
           <Clients />

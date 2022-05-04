@@ -4,7 +4,7 @@ import Container from "../components/Container";
 
 export default function Navbar({filled=false}) {
   return (
-      <nav className={`navbar navbar-dark ${filled?"bg-dark":"bg-fade"} navbar-expand-lg justify-self-start`}>
+      <nav className={`navbar navbar-dark ${filled?"grad-bg text-primary":"bg-fade navbar-dark"} navbar-expand-lg justify-self-start`}>
         <Container>
           <Link className="navbar-brand">ESI Nigeria</Link>
           <button
@@ -32,7 +32,7 @@ export default function Navbar({filled=false}) {
                 </Link>
               </li>
               <li className="nav-item">
-                <button className="btn btn-outline-primary rounded-pill">
+                <button className={`btn ${filled?"btn-light":"btn-outline-primary"} rounded-pill`}>
                   Contact us
                 </button>
               </li>

@@ -12,7 +12,7 @@ const backup = "../../images/internet_backup.png";
 export default function Services() {
   return (
     <div
-      className="bg-dark services-home text-light  position-relative"
+      className="bg-primary services-home text-light  position-relative"
       id="services"
     >
       <Container>
@@ -24,7 +24,7 @@ export default function Services() {
               <StaticImage src={hardware} />
             </div>
             <div className="col-12 col-md-7 col-lg-6 text-center text-md-start ">
-              <h3 className="grad-light">HARDWARE REPAIRS AND MAINTENANCE</h3>
+              <h3 className="text-light">HARDWARE REPAIRS AND MAINTENANCE</h3>
               <p>
               We understand that our clients need their systems at all times so, as professionals in the Information Technology industry, we understand the frustrations that arise when clients’ computer systems (Laptops, Desktops, Servers, Printers, Scanners etc.)Malfunction. We are able to service/repair all types of Computer equipment, and eliminate or minimize downtime in your operations.
               </p>
@@ -34,7 +34,7 @@ export default function Services() {
           {/* Anoither Service */}
           <div className="row align-items-center">
             <div className="col-12 col-md-7 col-lg-6 text-center text-md-start order-1 order-md-0">
-              <h3 className="grad-light">DESIGN, IMPLEMENTATION AND SUPPORT OF A DYNAMIC WEBSITE</h3>
+              <h3 className="text-light">DESIGN, IMPLEMENTATION AND SUPPORT OF A DYNAMIC WEBSITE</h3>
               <p>
               At ESI we not only design and build websites, we market and optimize your website to increase its profitability. Our objective is to see to it that we track the usage of the website as a part of your Company’s strategic growth plans.
               </p>
@@ -50,7 +50,7 @@ export default function Services() {
               <StaticImage src={backup} />
             </div>
             <div className="col-12 col-md-7 col-lg-6 order-1 text-center text-md-start ">
-              <h3 className="grad-light">INTERNET SUPPORT/ BACK-UP</h3>
+              <h3 className="text-light">INTERNET SUPPORT/ BACK-UP</h3>
               <p>
               at ESI we will help you deploy the best cost effective internet facility (VSAT, Modems etc.) for your company with fully customized features to serve you better. Our professionalism is first class and intend to keep it that way.
               </p>
@@ -65,7 +65,7 @@ export default function Services() {
           style={{ left: 0 }}
         >
           <Link to="/services">
-            <button className="btn btn-primary mx-auto">
+            <button className="btn btn-light mx-auto">
               Explore More <MdArrowForward />
             </button>
           </Link>

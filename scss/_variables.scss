@@ -32,12 +32,16 @@ $subheading: calc(1.5em + 100vw / 70);
 $subheading-sm: calc(1.5em + 100vw / 86);
 
 $gradient: linear-gradient(to right, $primary, darken($primary, 20));
+$gradient-down: linear-gradient(
+  to bottom,
+  lighten($primary, 20),
+  lighten($primary, 40)
+);
 $gradient-light: linear-gradient(
   to right,
   lighten($primary, 20),
   lighten($primary, 40)
 );
-$breadcrumb-divider: ">";
 %section {
   padding: 9% 0em;
   min-height: 100vh;

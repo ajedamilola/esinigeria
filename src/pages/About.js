@@ -58,8 +58,8 @@ export default function about() {
         </div>
       </Container>
 
-      <Wave fill="var(--bs-dark)" t={4} />
-      <div className="bg-dark" id="history">
+      <Wave fill="var(--bs-primary)" t={4} />
+      <div className="bg-primary" id="history">
         <Container>
           <Content
             className="py-6"
@@ -87,7 +87,7 @@ export default function about() {
           </Content>
         </Container>
       </div>
-      <Wave fill="var(--bs-dark)" t={5} />
+      <Wave fill="var(--bs-primary)" t={5} />
 
       {/* 
         <GridImages
