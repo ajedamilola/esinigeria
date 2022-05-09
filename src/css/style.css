@@ -12851,6 +12851,7 @@ textarea.form-control-lg {
 .clients .client img:hover {
   filter: none !important;
   transition: all 400ms ease-in-out;
+  scale: 1.2;
 }
 
 .rounded-border {
@@ -13032,6 +13033,7 @@ footer .float-end {
 }
 
 .card-service {
+  padding-top: 0.5em !important;
   width: auto;
 }
 .card-service h1, .card-service .h1 {
@@ -13040,8 +13042,9 @@ footer .float-end {
 }
 .card-service h2, .card-service .h2 {
   padding: 0.5em 0em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
+  font-family: lato, poppins, roboto;
 }
 .card-service h2, .card-service .h2, .card-service h1, .card-service .h1 {
   font-family: poppins;
@@ -13050,7 +13053,7 @@ footer .float-end {
   font-family: poppins-light;
 }
 .card-service .img {
-  max-width: 8em !important;
+  width: 90% !important;
 }
 
 .s-1 {

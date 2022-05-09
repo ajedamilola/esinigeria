@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Bg from "../../videos/bg-vid.mp4";
+import Loader from "../../images/loader.gif";
 
 export default function Intro() {
   return (
@@ -17,7 +18,7 @@ export default function Intro() {
         </Link>
       </div>
       <div className="bg">
-        <video src={Bg} muted loop controls={false} autoPlay />
+        <video src={Bg} muted loop controls={false} autoPlay poster={Loader}/>
       </div>
     </div>
   );

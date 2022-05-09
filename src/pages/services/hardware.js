@@ -23,8 +23,8 @@ export default function hardware() {
           ]}
         />
         <div className="py-4 text-center service-info">
-          <StaticImage src="../../images/website.png" />
-          <h1 className="py-5 display-5 text-primary mx-auto" style={{width:"80%",fontWeight:"700"}}><b>HARDWARE REPAIRS AND MAINTENANCE</b></h1>
+          <StaticImage src="../../images/hardaware.png" />
+          <h1 className="py-5 display-6 text-primary mx-auto" style={{width:"80%",fontWeight:"700"}}><b>HARDWARE REPAIRS AND MAINTENANCE</b></h1>
           <p className="rounded-border-sm">
           We understand that our clients need their systems at all times so, as professionals in the Information Technology industry, we understand the frustrations that arise when clients’ computer systems (Laptops, Desktops, Servers, Printers, Scanners etc.)Malfunction. We are able to service/repair all types of Computer equipment, and eliminate or minimize downtime in your operations.
           </p>
