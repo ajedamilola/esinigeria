@@ -1,6 +1,7 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
 import { MdPhone } from "@react-icons/all-files/md/MdPhone";
+import {FaClock} from  "@react-icons/all-files/fa/FaClock"
 import { MdArrowBack as Prev } from "@react-icons/all-files/md/MdArrowBack";
 import { MdArrowForward as Next } from "@react-icons/all-files/md/MdArrowForward";
 import Logo from "../../images/website.png";
@@ -19,15 +20,15 @@ export default function () {
           <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="2500">
               <FeatureCard
-                title="Fast Services"
-                content="Pariatur ea mollit amet cillum pariatur anim culpa ea nulla excepteur. Sint nisi quis aliquip sunt ad ullamco consequat excepteur"
-                image={<MdPhone size={50} color="var(--bs-primary)" />}
+                title="Fast & Quality Services"
+                content="We offer Quality yet Fast Services"
+                image={<FaClock size={50} color="var(--bs-primary)" />}
               />
             </div>
             <div className="carousel-item" data-bs-interval="2500">
               <FeatureCard
-                title="24/7 Service"
-                content="Pariatur ea mollit amet cillum pariatur anim culpa ea nulla excepteur. Sint nisi quis aliquip sunt ad ullamco consequat excepteur"
+                title="24/7 Customer Care"
+                content="Our Customer Care Services are always active and ready to help"
                 image={<MdPhone size={50} color="var(--bs-primary)" />}
               />
             </div>

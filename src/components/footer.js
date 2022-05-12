@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="col-12 col-md-6">
             <Link className="navbar-brand">ESI Nigeria</Link>
             <p>
-                Lorem ipsum and all whats not
+                Elitist Solution International
             </p>
             <address className="py-2">
               <Point /> 6, Cemetery Street, Apapa Lagos, Nigeria
@@ -47,30 +47,30 @@ export default function Footer() {
       <div className="bg-darker py-5">
         <Container>
           <h3>
-            <b>Links</b>
+            <b>Quick Links</b>
           </h3>
           <div className="row my-3 gy-3 justify-content-center justify-content-md-start">
             <div className="col-6 col-md-3">
               <ul className="nav flex-column">
-                <li className="nav-item">Home</li>
-                <li className="nav-item">Company History</li>
-                <li className="nav-item">Company Profile</li>
-                <li className="nav-item">Services</li>
+                <li className="nav-item"><Link to="/">Home</Link></li>
+                <li className="nav-item"><Link to="/about#history">Company History</Link></li>
+                <li className="nav-item"><Link to="/about#profile">Company Profile</Link></li>
+                <li className="nav-item"><Link to="/services">Services</Link></li>
               </ul>
             </div>
             <div className="col-6 col-md-3">
               <ul className="nav flex-column">
-                <li className="nav-item">Hardware Repairs </li>
-                <li className="nav-item">Website Design and Implementation</li>
-                <li className="nav-item">Consulting Services</li>
-                <li className="nav-item">Internet Backup and Support</li>
+                <li className="nav-item"><Link to="/services/hardware">Hardware Repairs</Link> </li>
+                <li className="nav-item"><Link to="/services/website">Website Design and Implementation</Link></li>
+                <li className="nav-item"><Link to="/services/training-and-consulting">Consulting Services</Link></li>
+                <li className="nav-item"><Link to="/services/internet-backup">Internet Backup and Support</Link></li>
               </ul>
             </div>
             <div className="col-12 col-md-3">
               <ul className="nav flex-column">
-                <li className="nav-item">Facebook </li>
-                <li className="nav-item">Twitter</li>
-                <li className="nav-item">Instagram</li>
+                <li className="nav-item"><Link to="">Facebook</Link> </li>
+                <li className="nav-item"><Link to="">Twitter</Link></li>
+                <li className="nav-item"><Link to="">Instagram</Link></li>
               </ul>
             </div>
           </div>

@@ -12934,6 +12934,9 @@ textarea.form-control-lg {
   width: fit-content;
   margin: auto;
 }
+.features h3, .features .h3 {
+  font-weight: 500 !important;
+}
 .features .row {
   width: fit-content !important;
   margin: auto;
@@ -12997,6 +13000,9 @@ footer address, footer .nav-item {
 }
 footer .float-end {
   font-size: 0.9rem;
+}
+footer a {
+  color: white !important;
 }
 
 .about-content h2, .about-content .h2 {

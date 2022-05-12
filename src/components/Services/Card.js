@@ -11,11 +11,15 @@ export default function Card({ index = 0, img, name = "", to = "single" }) {
         >
           {img}
         </div>
-        <div style={{minHeight:"30%"}}>
+        <div style={{ minHeight: "30%" }}>
           <h2>{name}</h2>
         </div>
         <div>
-          <button className="btn btn-primary btn-sm text-white">Enquire</button>
+          <a href={`/services/enquire?name=${name}`}>
+            <button className="btn btn-primary btn-sm text-white">
+              Enquire
+            </button>
+          </a>
           <Link to={to}>
             <button className="ms-1 btn btn-outline-primary btn-sm my-1 my-md-0">
               See More

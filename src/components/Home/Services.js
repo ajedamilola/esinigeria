@@ -26,19 +26,34 @@ export default function Services() {
             <div className="col-12 col-md-7 col-lg-6 text-center text-md-start ">
               <h3 className="text-light">HARDWARE REPAIRS AND MAINTENANCE</h3>
               <p>
-              We understand that our clients need their systems at all times so, as professionals in the Information Technology industry, we understand the frustrations that arise when clients’ computer systems (Laptops, Desktops, Servers, Printers, Scanners etc.)Malfunction. We are able to service/repair all types of Computer equipment, and eliminate or minimize downtime in your operations.
+                We understand that our clients need their systems at all times
+                so, as professionals in the Information Technology industry, we
+                understand the frustrations that arise when clients’ computer
+                systems (Laptops, Desktops, Servers, Printers, Scanners
+                etc.)Malfunction. We are able to service/repair all types of
+                Computer equipment, and eliminate or minimize downtime in your
+                operations.
               </p>
-              <button className="btn btn-outline-primary">Details</button>
+              <Link to="/services/hardware">
+                <button className="btn btn-light">Details</button>
+              </Link>
             </div>
           </div>
           {/* Anoither Service */}
           <div className="row align-items-center">
             <div className="col-12 col-md-7 col-lg-6 text-center text-md-start order-1 order-md-0">
-              <h3 className="text-light">DESIGN, IMPLEMENTATION AND SUPPORT OF A DYNAMIC WEBSITE</h3>
+              <h3 className="text-light">
+                DESIGN, IMPLEMENTATION AND SUPPORT OF A DYNAMIC WEBSITE
+              </h3>
               <p>
-              At ESI we not only design and build websites, we market and optimize your website to increase its profitability. Our objective is to see to it that we track the usage of the website as a part of your Company’s strategic growth plans.
+                At ESI we not only design and build websites, we market and
+                optimize your website to increase its profitability. Our
+                objective is to see to it that we track the usage of the website
+                as a part of your Company’s strategic growth plans.
               </p>
-              <button className="btn btn-outline-primary">Details</button>
+              <Link to="/services/website">
+                <button className="btn btn-light">Details</button>
+              </Link>
             </div>
             <div className="col-12 col-md-5 col-lg-6 order-0 order-md-1">
               <StaticImage src={website} />
@@ -52,9 +67,14 @@ export default function Services() {
             <div className="col-12 col-md-7 col-lg-6 order-1 text-center text-md-start ">
               <h3 className="text-light">INTERNET SUPPORT/ BACK-UP</h3>
               <p>
-              at ESI we will help you deploy the best cost effective internet facility (VSAT, Modems etc.) for your company with fully customized features to serve you better. Our professionalism is first class and intend to keep it that way.
+                at ESI we will help you deploy the best cost effective internet
+                facility (VSAT, Modems etc.) for your company with fully
+                customized features to serve you better. Our professionalism is
+                first class and intend to keep it that way.
               </p>
-              <button className="btn btn-outline-primary">Details</button>
+              <Link to="/services/internet-backup">
+                <button className="btn btn-light">Details</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -70,7 +90,6 @@ export default function Services() {
             </button>
           </Link>
         </div>
-       
       </Container>
     </div>
   );

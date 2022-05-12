@@ -26,8 +26,11 @@ export default function service() {
             },
           ]}
         />
-        <div className="text-center service-info">
-            <StaticImage src="../../images/consulting.svg" style={{transform:"scale(0.5)"}}/>
+        <div className="text-center service-info py-5">
+          <StaticImage
+            src="../../images/consulting.svg"
+            style={{ transform: "scale(0.5)", margin: "-15% 0em" }}
+          />
           <h1
             className="py-5 display-6 text-primary mx-auto"
             style={{ width: "80%", fontWeight: "700" }}

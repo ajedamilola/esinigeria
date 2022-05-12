@@ -9,15 +9,14 @@ export default function CardLg() {
     <div className="card text-light card-service s-1">
       <div className="card-body d-flex align-items-center">
         <div>
-          <StaticImage src="../../images/icon.png" class="img" />
+          <StaticImage src="../../images/logo.png" class="img" />
 
           <h1>
             Our services{"  "}
              <Right size={35} className="d-none d-md-inline ms-auto" />
           </h1>
           <p>
-            Exercitation ut aliqua nostrud adipisicing enim officia velit.
-            Voluptate amet aute consequat adipisicing sunt fugiat.
+            At Elitist Solution International We offer range of quality services to our clients. These Services Includes :
           </p>
           <Link to="#service" className="text-white">
             <Down size={35} className="d-block d-md-none mx-auto" />

@@ -8,6 +8,9 @@
     h2{
        @extend %title;
     }
+    h3{
+        font-weight: 500 !important;
+    }
     .row{
         width: fit-content !important;
         margin: auto;
