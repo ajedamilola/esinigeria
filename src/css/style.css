@@ -12839,6 +12839,10 @@ textarea.form-control-lg {
   padding: 0.3em;
 }
 
+.pre-nav {
+  background-color: rgba(8, 96, 8, 0.75) !important;
+}
+
 .clients h2, .clients .h2 {
   font-family: poppins;
   color: #57655e;
@@ -13015,8 +13019,9 @@ footer a {
 .about-content h2.text-center, .about-content .text-center.h2 {
   color: #fff;
 }
-.about-content p {
+.about-content p, .about-content em {
   font-family: poppins-light !important;
+  font-size: 1em;
 }
 .about-content .bg-l {
   background-color: rgba(204, 204, 204, 0.808);

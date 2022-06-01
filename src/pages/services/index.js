@@ -49,6 +49,9 @@ export default function Services() {
                 <div className="col-6 col-md-4">
                   <Card index={4} name="TRAINING AND CONSULTING SERVICES" img={<StaticImage src="../../images/consulting.svg" class="img" />} to="training-and-consulting" />
                 </div>
+                <div className="col-6 col-md-4">
+                  <Card index={5} name="CLOUD SERVICES" img={<StaticImage src="../../images/consulting.svg" class="img" />} to="cloud" />
+                </div>
               </div>
             </div>
           </div>
@@ -56,8 +59,11 @@ export default function Services() {
       </Container>
       <Footer />
       <Helmet>
-        <script src="./bootstrap.min.js"></script>
+        <script src="/bootstrap.min.js"></script>
         <title>Services | Esi Nigeria</title>
+        <meta type='keywords' content='Esi Nigeria, IT Services, Services, IT Services in Nigeria' />
+        <meta type='description' content=' At Elitist Solution International We offer range of quality services to our clients. These Services Includes : CLOUD SERVICES, HARDWARE MAINTAINACE AND REPAIRS, e.t.c' />
+        <link rel="canonical" href="https://www.esinigeria.com.ng/services/" />
       </Helmet>
     </div>
   );

@@ -35,12 +35,19 @@ export default function service() {
             <b>INTERNET SUPPORT/ BACK-UP</b>
           </h1>
           <p className="rounded-border-sm">
-            The importance of the internet in controlling the way business is done is of great gain. Executives bear an enormous burden as they attempt to understand the challenges it brings, keep abreast of events, and make intelligent decisions and plans. 
-So, at ESI we will help you deploy the best cost effective internet facility (VSAT, Modems etc.) for your company with fully customized features to serve you better. Our professionalism is first class and intend to keep it that way
-
+            The importance of the internet in controlling the way business is
+            done is of great gain. Executives bear an enormous burden as they
+            attempt to understand the challenges it brings, keep abreast of
+            events, and make intelligent decisions and plans. So, at ESI we will
+            help you deploy the best cost effective internet facility (VSAT,
+            Modems etc.) for your company with fully customized features to
+            serve you better. Our professionalism is first class and intend to
+            keep it that way
           </p>
           <div className="py-4">
-            <button className="m-1 btn btn-outline-primary">Enquire</button>
+            <a href="/services/enquire?name=INTERNET SUPPORT/ BACK-UP">
+              <button className="m-1 btn btn-outline-primary">Enquire</button>
+            </a>
             <Link to="/services">
               <button className="m-1 btn btn-primary">Other Services</button>
             </Link>
@@ -50,9 +57,20 @@ So, at ESI we will help you deploy the best cost effective internet facility (VS
       </Container>
       <Footer />
       <Helmet>
-        <title>INTERNET SUPPORT AND BACKUP</title>
-        <script src="../../bootstrap.min.js"></script>
+        <title>INTERNET SUPPORT AND BACKUP|Esi Nigeria</title>
+        <script src="/bootstrap.min.js"></script>
+        <meta type='keywords' content='INTERNET SUPPORT AND BACKUP' />
+        <meta type='description' content='The importance of the internet in controlling the way business is
+            done is of great gain. Executives bear an enormous burden as they
+            attempt to understand the challenges it brings, keep abreast of
+            events, and make intelligent decisions and plans. So, at ESI we will
+            help you deploy the best cost effective internet facility (VSAT,
+            Modems etc.) for your company with fully customized features to
+            serve you better. Our professionalism is first class and intend to
+            keep it that way' />
+            <link rel="canonical" href="https://www.esinigeria.com.ng/services/internet-backup/" />
       </Helmet>
+
     </div>
   );
 }

@@ -34,7 +34,6 @@ export default function About() {
             <menu className="collapse" id="sub-about-menu">
                 <Link className="dropdown-item" to="/about#profile">Company Profile</Link>
                 <Link className="dropdown-item" to="/about#history">Company History</Link>
-                <Link className="dropdown-item" to="/" download>Download Profile</Link>
             </menu>
           </div>
         </div>

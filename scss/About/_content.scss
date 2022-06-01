@@ -9,8 +9,9 @@
       color: $white;
     }
   }
-  p {
+  p,em {
     font-family: poppins-light !important;
+    font-size: 1em;
   }
   .bg-l {
     background-color: rgba(204, 204, 204, 0.808);

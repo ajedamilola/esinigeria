@@ -15,8 +15,19 @@ import Container from "../components/Container";
 import BreadCrumb from "../components/BreadCrumb";
 import Clients from "../components/Clients";
 import Wave from "../components/Wave";
+import { graphql as ql } from "gatsby";
 
-export default function IndexPage() {
+export const query = 
+   (ql`
+     {
+       site(siteMetadata: {}){
+         siteMetadata{
+           description
+         }
+       }
+     }
+   `)
+export default function IndexPage({data}) {
   return (
     <div>
       <Topbar>
@@ -43,8 +54,12 @@ export default function IndexPage() {
         </Container>
         <Footer />
         <Helmet>
-          <script src="./bootstrap.min.js"></script>
+          <script src="/bootstrap.min.js"></script>
           <title>Esi Nigeria | Elitist Solution International</title>
+          <meta name="keywords" content="elitist solution international, esi nigeria, it company, it company in lagos, it company in Nigeria, it company in africa" />
+          <meta name="description" content={data.site.siteMetadata.description} />
+          <link rel="canonical" href="https://www.esinigeria.com.ng/" />
+
         </Helmet>
       </div>
     </div>

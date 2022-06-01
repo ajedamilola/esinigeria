@@ -6,6 +6,7 @@ export default function Content({
   titlePos = "left" || "right",
   light = true,
   className,
+  nobg
 }) {
   return (
     <div className={`about-content ${className}`}>
@@ -28,7 +29,7 @@ export default function Content({
         <div className="col underline"></div>
       </div>
       <div
-        className={`bg-${light ? "l" : "d"} p-1 p-md-3 p-lg-4 rounded-top-${
+        className={`${nobg?"":`bg-${light ? "l" : "d"}`} p-1 p-md-3 p-lg-4 rounded-top-${
           titlePos === "right" ? "left" : "right"
         } rounded-bottom-${titlePos === "right" ? "left" : "right"} ${
           titlePos === "center" ? "rounded-border" : ""

@@ -13,34 +13,42 @@ import Clients from "../components/clients";
 import Us from "../components/Home/Us";
 import Wave from "../components/Wave";
 import { StaticImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
+import { Link, graphql as ql } from "gatsby";
 
-export default function about() {
+export const query = ql`{
+  site{
+    siteMetadata{
+      description
+    }
+  }
+}
+`;
+export default function about({ data }) {
   return (
     <div className="bg-light">
       <Topbar>
         <Navbar />
         <Intro />
       </Topbar>
-      <Container>
+
         <BreadCrumb
           pages={[
             { to: "/", title: "Home" },
             { to: "/About", title: "About", active: true },
           ]}
-          className="pt-3"
+          className="pt-3 px-4 px-md-7"
         />
-
-        <Content className="py-6">
-          <p className="text-center text-muted">
+        <Content className="py-6 px-4">
+          <em className="text-center text-muted">
             ESI was borne out of the desire to create an indigenous brand that
             will meet the I.T needs of organizations and individuals both
             locally and globally by providing first class services, products and
             innovations while creating an avenue for talented individuals to
             express themselves technologically
-          </p>
+          </em>
         </Content>
 
+      <Container>
         <div className="row gx-5 py-8 align-items-center" id="profile">
           <div className="col-12 col-md-4">
             <StaticImage src="../../images/logo.png" className="mt-2" />
@@ -48,9 +56,15 @@ export default function about() {
           <div className="col-12 col-md-8">
             <Content title="Company Profile" titlePos="left">
               <p>
-              The company ELITIST SOLUTION INTERNATIONAL registered as a business name with the Corporate Affairs Commission (CAC) with a capital sum of $4000. The money was used by 
-              <Link to="https://facebook.com/josephneem">Joseph Ojochenemi</Link> 
-              (the founder) to secure a partnering office in Yaba and consequently in Apapa, registration of the business and sustaining team members.
+                The company ELITIST SOLUTION INTERNATIONAL registered as a
+                business name with the Corporate Affairs Commission (CAC) with a
+                capital sum of $4000. The money was used by
+                <Link to="https://facebook.com/josephneem">
+                  Joseph Ojochenemi
+                </Link>
+                (the founder) to secure a partnering office in Yaba and
+                consequently in Apapa, registration of the business and
+                sustaining team members.
               </p>
               <br />
             </Content>
@@ -62,10 +76,11 @@ export default function about() {
       <div className="bg-primary" id="history">
         <Container>
           <Content
-            className="py-6"
+            className="py-6 bg-primary"
             title="Company History"
             titlePos="center"
             light={false}
+            nobg
           >
             <p className="text-center">
               Elitist Solution International also known as ESI, Nigeria started
@@ -103,8 +118,14 @@ export default function about() {
       </Container>
       <Footer />
       <Helmet>
-        <script src="../bootstrap.min.js"></script>
-        <title>About US | Esi Nigeria</title>
+        <script src="/bootstrap.min.js"></script>
+        <title>About Us | Elitist Solution International</title>
+        <meta
+          name="keywords"
+          content="elitist solution international, esi nigeria, it company, it company in lagos, it company in Nigeria, it company in africa"
+        />
+        <meta name="description" content={data.site.siteMetadata.description} />
+        <link rel="canonical" href="https://www.esinigeria.com.ng/about/" />
       </Helmet>
     </div>
   );

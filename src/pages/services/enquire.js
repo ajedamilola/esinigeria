@@ -1,4 +1,4 @@
-import React, { useReducer, useRef } from "react";
+import React, { useReducer } from "react";
 import Container from "../../components/Container";
 import Navbar from "../../components/navbar";
 import "../../css/style.css";
@@ -7,11 +7,11 @@ import Footer from "../../components/footer";
 
 export default function Enquire() {
   let url = [];
+  var serviceName = "";
   if (typeof window != "undefined") {
     url = new URLSearchParams(window.location.search);
+    serviceName =  url.get("name");
   }
-
-  const servicesRef = useRef(null);
 
   const inputReducer = (state, actions) => {
     switch (actions.type) {
@@ -21,14 +21,23 @@ export default function Enquire() {
         return { ...state, email: actions.value };
       case "info":
         return { ...state, info: actions.value };
-      case "services":
-        return { ...state, services: actions.value };
+      case "service":
+        return { ...state, service: actions.value };
       case "phone":
         return { ...state, phone: actions.value };
       case "submit":
         return { ...state, submitting: actions.value };
       case "response":
         return { ...state, response: actions.value };
+      case "clear":
+        return {
+          phone: "",
+          service: "",
+          info: "",
+          email: "",
+          name: "",
+          response: state.response,
+        };
       default:
         return state;
     }
@@ -37,19 +46,20 @@ export default function Enquire() {
   const [state, setState] = useReducer(inputReducer, {});
 
   const handleSubmit = (e) => {
-    setState({ type: "services", value: servicesRef.current.value });
+    if (typeof window == "undefined") return;
     setState({ type: "submit", value: true });
-    fetch("http://localhost:8888/submit_service_request.php", {
+    fetch("https://esinigeria.com.ng/api/submit_service_request.php", {
       method: "POST",
       headers: {
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
         "access-control-request-method": "POST",
       },
-      body: `name=${state.name}&email=${state.email}&service=${state.services}&phone=${state.phone}&info=${state.info}`,
+      body: `name=${state.name}&email=${state.email}&service=${state.service}&phone=${state.phone}&info=${state.info}`,
     })
       .then((res) => res.json())
       .then((data) => {
         setState({ type: "response", value: data });
+        setState({ type: "clear" });
       })
       .catch((e) => {
         setState({
@@ -67,7 +77,11 @@ export default function Enquire() {
   return (
     <div>
       <Helmet>
-        <title>{url.get("name")} | Service Enquiry</title>
+        <title>{serviceName} | Service Enquiry</title>
+        <meta name="keywords" content="ESI Nigeria, Services, IT Services" />
+        <meta name="description" content={`Enquire for ${serviceName}}`} />
+        <script src="/bootsrap.min.js"></script>
+        <link rel="canonical" href="https://www.esinigeria.com.ng/services/enquire/" />
       </Helmet>
       <Navbar filled />
       <Container className="py-5">
@@ -86,22 +100,24 @@ export default function Enquire() {
             className="p-4 pb-6"
             onSubmit={handleSubmit}
           >
-              <h5 className={`text-${state.response.ok?'success':'danger'} text-center`}>
-                  {
-                      state.response?state.response.msg:null
-                  }
-              </h5>
+            <h5
+              className={`text-${
+                state.response && state.response.ok ? "success" : "danger"
+              } text-center`}
+            >
+              {state.response ? state.response.msg : null}
+            </h5>
             <div className="row g-3">
               <div className="col-12 col-md-6">
                 <div className="form-floating">
                   <input
                     type="text"
-                    placeholder="organisation/individual name"
                     className="form-control"
                     value={state.name}
                     onChange={(e) => {
                       setState({ value: e.target.value, type: "name" });
                     }}
+                    required
                   />
                   <label htmlFor="name" className="form-text">
                     organisation/individual name
@@ -113,12 +129,12 @@ export default function Enquire() {
                 <div className="form-floating">
                   <input
                     type="email"
-                    placeholder="Email Address"
                     className="form-control "
                     value={state.email}
                     onChange={(e) => {
                       setState({ value: e.target.value, type: "email" });
                     }}
+                    required
                   />
                   <label htmlFor="name" className="form-text">
                     Email Address
@@ -126,41 +142,48 @@ export default function Enquire() {
                 </div>
               </div>
               <div className="col-12 col-md-6">
-                <div>
+                <div className="form-floating">
                   <select
-                    className="form-control"
-                    placeholder="Select Sevice"
-                    multiple
-                    ref={servicesRef}
+                    className="form-control form-custom"
+                    onChange={(e) =>
+                      setState({ type: "service", value: e.target.value })
+                    }
+                    required
                   >
-                    <option vlaue="hard">
-                      Hardaware Maintenace And repairs
+                    <option value="HARDWARE MAINTAINANCE AND REPAIRS" selected={serviceName==="HARDWARE MAINTAINANCE AND REPAIRS"}>
+                      HARDWARE MAINTAINANCE AND REPAIRS
                     </option>
-                    <option vlaue="hard">
-                      Hardaware Maintenace And repairs
+                    <option value="INTERNET SUPPORT/ BACK-UP" selected={serviceName==="INTERNET SUPPORT/ BACK-UP"}>
+                      INTERNET SUPPORT/ BACK-UP
                     </option>
-                    <option vlaue="hard">
-                      Hardaware Maintenace And repairs
+                    <option value="CONNECTIVITY AND NETWORK SECURITY" selected={serviceName==="CONNECTIVITY AND NETWORK SECURITY"}>
+                      CONNECTIVITY AND NETWORK SECURITY
                     </option>
-                    <option vlaue="hard">
-                      Hardaware Maintenace And repairs
+                    <option value="TRAINING AND CONSULTING SERVICES" selected={serviceName==="TRAINING AND CONSULTING SERVICES"}>
+                      TRAINING AND CONSULTING SERVICES
+                    </option>
+                    <option value="WEBSITE IMPLEMENTATION AND DESIGN" selected={serviceName==="WEBSITE IMPLEMENTATION AND DESIGN"}>
+                      WEBSITE IMPLEMENTATION AND DESIGN
                     </option>
                   </select>
                   <label className="form-text">
-                    hold <code>CTRL</code> + click to select muiltiple
+                    <code>Click</code> to select service
                   </label>
                 </div>
               </div>
               <div className="col-12 col-md-6">
-                <input
-                  className="form-control"
-                  type="tel"
-                  placeholder="phone number"
-                  value={state.tel}
-                  onChange={(e) =>
-                    setState({ type: "phone", value: e.target.value })
-                  }
-                />
+                <div className="form-floating">
+                  <input
+                    className="form-control"
+                    type="tel"
+                    value={state.tel}
+                    onChange={(e) =>
+                      setState({ type: "phone", value: e.target.value })
+                    }
+                    required
+                  />
+                  <label className="form-text">Phone Number</label>
+                </div>
               </div>
               <div className="col-12">
                 <div className="form-floating">
@@ -180,13 +203,21 @@ export default function Enquire() {
                 className="btn btn-primary text-white"
                 disabled={state.submitting}
               >
-                {state.submitting ? "Submitting Request" : "Enquire"}
+                {state.submitting ? (
+                  <div className="d-flex justify-content-center align-items-center flex-row">
+                    <div>
+                      <span className="spinner-grow"></span>
+                    </div>
+                    <div>Submitting Request....</div>
+                  </div>
+                ) : (
+                  "Enquire"
+                )}
               </button>
             </div>
           </form>
         </fieldset>
       </Container>
-
       <Footer />
     </div>
   );

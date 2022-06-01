@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import { IoLocation as Point } from "@react-icons/all-files/io5/IoLocation";
 import { FaPhone as Phone } from "@react-icons/all-files/fa/FaPhone";
 import { IoMail as Mail } from "@react-icons/all-files/io5/IoMail";
@@ -9,6 +9,21 @@ import Container from "./Container";
 import React from "react";
 
 export default function Footer() {
+  const data = useStaticQuery(graphql`
+    {
+      site(siteMetadata: {}) {
+        siteMetadata {
+          title
+          description
+          siteUrl
+          phone
+          email
+          address
+        }
+      }
+    }
+  `)
+  const {address,title,email,phone} = data.site.siteMetadata;
   return (
     <footer className="bg-dark text-light pt-5">
       <Container>
@@ -16,13 +31,13 @@ export default function Footer() {
           <div className="col-12 col-md-6">
             <Link className="navbar-brand">ESI Nigeria</Link>
             <p>
-                Elitist Solution International
+                {title}
             </p>
             <address className="py-2">
-              <Point /> 6, Cemetery Street, Apapa Lagos, Nigeria
+              <Point /> {address}
               <br />
-              <Phone /> 09124334546565, <Mail />
-              info@esinigeria.com.ng
+              <Phone /> {phone}, <Mail />
+              {email}
             </address>
           </div>
           <div className="col-12 col-md-6 text-center text-lg-end">
@@ -35,10 +50,7 @@ export default function Footer() {
                 <Link className="text-white px-1">
                   <I size={25} />
                 </Link>
-                <Link className="text-white px-1">
-                  <Phone size={25} />
-                </Link>
-                <Link className="text-white px-1">
+                <Link className="text-white px-1" to={`mailto:${email}`}>
                   <Mail size={25} />
                 </Link>
           </div>
@@ -64,13 +76,6 @@ export default function Footer() {
                 <li className="nav-item"><Link to="/services/website">Website Design and Implementation</Link></li>
                 <li className="nav-item"><Link to="/services/training-and-consulting">Consulting Services</Link></li>
                 <li className="nav-item"><Link to="/services/internet-backup">Internet Backup and Support</Link></li>
-              </ul>
-            </div>
-            <div className="col-12 col-md-3">
-              <ul className="nav flex-column">
-                <li className="nav-item"><Link to="">Facebook</Link> </li>
-                <li className="nav-item"><Link to="">Twitter</Link></li>
-                <li className="nav-item"><Link to="">Instagram</Link></li>
               </ul>
             </div>
           </div>

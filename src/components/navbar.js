@@ -1,26 +1,36 @@
-import { Link } from "gatsby";
+import { Link,useStaticQuery,graphql } from "gatsby";
 import React from "react";
 import Container from "../components/Container";
 import { FaPhone } from "@react-icons/all-files/fa/FaPhone";
 import { IoMdMail } from "@react-icons/all-files/io/IoMdMail";
 
 export default function Navbar({ filled = false }) {
+  const data = useStaticQuery(graphql`
+  {
+    site{
+      siteMetadata{
+        email
+        phone
+      }
+    }
+  }`)
+  const {email,phone} = data.site.siteMetadata;
   return (
     <div
       className={`${filled ? "grad-bg text-primary" : "bg-fade navbar-dark"}`}
     >
-      <div className="text-end bg-darker py-1 px-5">
-        <Link to="tel:08132333743637">
+      <div className="text-start pre-nav py-1 px-2 px-md-3 px-lg-4 px-xl-5">
+        <Link to={"tel:"+phone}>
           <small className="mx-2 text-white">
             <FaPhone className="mx-2" />
-            0812324354545656
+            {phone}
           </small>
         </Link>
 
-        <Link to="mailto:info@esinigeria.com.ng">
+        <Link to={"mailto:"+email}>
           <small className="mx-2 text-white">
             <IoMdMail className="mx-2" />
-            info@esinigeria.com.ng
+            {email}
           </small>
         </Link>
       </div>
@@ -28,7 +38,7 @@ export default function Navbar({ filled = false }) {
         className={`navbar navbar-dark  navbar-expand-lg justify-self-start`}
       >
         <Container>
-          <Link className="navbar-brand">ESI Nigeria</Link>
+          <Link className="navbar-brand" to="/">ESI Nigeria</Link>
           <button
             className="navbar-toggler"
             data-bs-target="#top-navigation"
