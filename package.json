@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "style": "sass scss:src/css --watch",
+    "style": "sass scss:src/css --watch --style=compressed",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
@@ -31,7 +31,8 @@
     "popper.js": "^1.16.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-meta-tags": "^1.0.1"
   },
   "devDependencies": {
     "@popperjs/core": "^2.11.5"

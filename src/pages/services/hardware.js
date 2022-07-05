@@ -7,6 +7,7 @@ import Helmet from "react-helmet";
 import Footer from "../../components/footer";
 import { Link } from "gatsby";
 import "../../css/style.css";
+import { MetaTags } from "react-meta-tags";
 
 export default function hardware() {
   return (
@@ -55,7 +56,7 @@ export default function hardware() {
         </div>
       </Container>
       <Footer />
-      <Helmet>
+      <MetaTags>
         <title>hardware maintainance and repairs|ESI Nigeria</title>
         <meta type="keywords" content="hardware maintainance and repairs" />
         <meta
@@ -64,7 +65,7 @@ export default function hardware() {
         />
         <script src="/bootstrap.min.js"></script>
         <link rel="canonical" href="https://www.esinigeria.com.ng/services/hardware/" />
-      </Helmet>
+      </MetaTags>
     </div>
   );
 }

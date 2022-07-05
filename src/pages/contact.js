@@ -7,7 +7,7 @@ import Breadcrumb from "../components/BreadCrumb";
 import Helmet from "react-helmet";
 import "../css/style.css";
 
-import { graphql as ql, Link } from "gatsby";
+import { graphql as ql } from "gatsby";
 export const query = ql`{
   site{
     siteMetadata{
@@ -55,7 +55,7 @@ export default function contactus({ data }) {
               className="btn btn-danger"
               role="link"
               onClick={() => {
-                if (window != undefined) {
+                if (window !== undefined) {
                   const action = window.confirm(
                     "Click Ok to open the mailing service"
                   );
@@ -71,7 +71,7 @@ export default function contactus({ data }) {
               className="btn btn-outline-danger"
               role="link"
               onClick={(e) => {
-                if (window != undefined) {
+                if (window !== undefined) {
                   window.location.href = "tel:" + phone;
                 }
               }}

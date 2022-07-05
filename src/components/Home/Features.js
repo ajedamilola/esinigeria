@@ -4,10 +4,9 @@ import { MdPhone } from "@react-icons/all-files/md/MdPhone";
 import {FaClock} from  "@react-icons/all-files/fa/FaClock"
 import { MdArrowBack as Prev } from "@react-icons/all-files/md/MdArrowBack";
 import { MdArrowForward as Next } from "@react-icons/all-files/md/MdArrowForward";
-import Logo from "../../images/website.png";
 import Container from "../Container";
 
-export default function () {
+export default function Features() {
   return (
     <div className="features bg-light d-flex">
       <Container>

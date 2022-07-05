@@ -1,7 +1,6 @@
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import Helmet from "react-helmet";
 import Container from "../Container";
 
 export default function About() {

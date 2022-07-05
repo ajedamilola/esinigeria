@@ -7,6 +7,7 @@ import Helmet from "react-helmet";
 import Footer from "../../components/footer";
 import { Link } from "gatsby";
 import "../../css/style.css";
+import { MetaTags } from "react-meta-tags";
 
 export default function service() {
   return (
@@ -56,7 +57,7 @@ export default function service() {
         </div>
       </Container>
       <Footer />
-      <Helmet>
+      <MetaTags>
         <title>INTERNET SUPPORT AND BACKUP|Esi Nigeria</title>
         <script src="/bootstrap.min.js"></script>
         <meta type='keywords' content='INTERNET SUPPORT AND BACKUP' />
@@ -69,7 +70,7 @@ export default function service() {
             serve you better. Our professionalism is first class and intend to
             keep it that way' />
             <link rel="canonical" href="https://www.esinigeria.com.ng/services/internet-backup/" />
-      </Helmet>
+      </MetaTags>
 
     </div>
   );

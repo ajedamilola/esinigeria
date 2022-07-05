@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar";
 import "../../css/style.css";
 import Helmet from "react-helmet";
 import Footer from "../../components/footer";
+import { MetaTags } from "react-meta-tags";
 
 export default function Enquire() {
   let url = [];
@@ -76,13 +77,13 @@ export default function Enquire() {
 
   return (
     <div>
-      <Helmet>
+      <MetaTags>
         <title>{serviceName} | Service Enquiry</title>
         <meta name="keywords" content="ESI Nigeria, Services, IT Services" />
         <meta name="description" content={`Enquire for ${serviceName}}`} />
         <script src="/bootsrap.min.js"></script>
         <link rel="canonical" href="https://www.esinigeria.com.ng/services/enquire/" />
-      </Helmet>
+      </MetaTags>
       <Navbar filled />
       <Container className="py-5">
         <fieldset
@@ -149,6 +150,7 @@ export default function Enquire() {
                       setState({ type: "service", value: e.target.value })
                     }
                     required
+                    id="service-list"
                   >
                     <option value="HARDWARE MAINTAINANCE AND REPAIRS" selected={serviceName==="HARDWARE MAINTAINANCE AND REPAIRS"}>
                       HARDWARE MAINTAINANCE AND REPAIRS
@@ -166,7 +168,7 @@ export default function Enquire() {
                       WEBSITE IMPLEMENTATION AND DESIGN
                     </option>
                   </select>
-                  <label className="form-text">
+                  <label htmlFor = "service-list" className="form-text">
                     <code>Click</code> to select service
                   </label>
                 </div>
@@ -180,23 +182,24 @@ export default function Enquire() {
                     onChange={(e) =>
                       setState({ type: "phone", value: e.target.value })
                     }
+                    id="phone"
                     required
                   />
-                  <label className="form-text">Phone Number</label>
+                  <label className="form-text" htmlFor="phone">Phone Number</label>
                 </div>
               </div>
               <div className="col-12">
                 <div className="form-floating">
                   <textarea
-                    placeholder="additional information"
                     className="form-control"
                     style={{ height: 100 }}
                     value={state.info}
                     onChange={(e) => {
                       setState({ value: e.target.value, type: "info" });
                     }}
+                    id="additional"
                   ></textarea>
-                  <label>Addtional information</label>
+                  <label htmlFor="additional">Addtional information</label>
                 </div>
               </div>
               <button

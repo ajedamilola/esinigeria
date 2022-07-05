@@ -21,12 +21,6 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/pages/`,
-      },
-    },
-    {
       resolve: "gatsby-plugin-nprogress",
       options: {
         color: "rgb(16, 190, 16)",

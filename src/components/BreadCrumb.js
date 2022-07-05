@@ -1,8 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
-
 export default function BreadCrumb({ pages,className }) {
-  var index = 0;
+  let index;
   return (
     <nav aria-label="breadcrumb" className={`${className}`}>
       <ol class="breadcrumb">

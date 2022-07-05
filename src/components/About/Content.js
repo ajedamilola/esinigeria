@@ -19,7 +19,7 @@ export default function Content({
       </h2>
       <div
         className={`${
-          titlePos == "center" ? "d-flex" : "d-none"
+          titlePos === "center" ? "d-flex" : "d-none"
         } justify-content-around flex-row align-items-center`}
       >
         <div className="col underline"></div>

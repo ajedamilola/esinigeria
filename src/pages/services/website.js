@@ -7,6 +7,8 @@ import Helmet from "react-helmet";
 import Footer from "../../components/footer";
 import { Link } from "gatsby";
 import "../../css/style.css";
+import { MetaTags } from "react-meta-tags";
+
 
 export default function website() {
   return (
@@ -57,7 +59,7 @@ export default function website() {
         </div>
       </Container>
       <Footer />
-      <Helmet>
+      <MetaTags>
         <title>Website Implemetation and Design| Esi Nigeria</title>
         <meta type="keywords" content="Website Design,Esi Nigeria,ELitist Solution International " />
         <meta
@@ -74,7 +76,7 @@ export default function website() {
         <script src="../../bootstrap.min.js"></script>
         <link rel="canonical" href="https://www.esinigeria.com.ng/services/website/" />
 
-      </Helmet>
+      </MetaTags>
     </div>
   );
 }

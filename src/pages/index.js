@@ -77,10 +77,9 @@ const TrustNote = () => (
       </div>
       <div className="position-relative">
         <FaCertificate
-          size={65}
           color="var(--bs-info)"
-          className="position-absolute"
-          style={{ right: 0, transform: "translateY(-45px)" }}
+          className="position-absolute certificate"
+          style={{ right: 0, transform: "translateY(-50%)" }}
         />
       </div>
     </Container>

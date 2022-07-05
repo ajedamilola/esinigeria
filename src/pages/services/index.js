@@ -38,7 +38,7 @@ export default function Services() {
                   <Card index={0} name="HARDWARE REPAIRS AND MAINTENANCE" img={<StaticImage src="../../images/hardwares.png" class="img" />} to="hardware" />
                 </div>
                 <div className="col-6 col-md-4">
-                  <Card index={1} name="DESIGN, IMPLEMENTATION AND SUPPORT OF A DYNAMIC WEBSITE" img={<StaticImage src="../../images/website.png" class="img" />} to="website" />
+                  <Card index={1} name="WEBSITE IMPLEMENTATION AND DESIGN" img={<StaticImage src="../../images/website.png" class="img" />} to="website"/>
                 </div>
                 <div className="col-6 col-md-4">
                   <Card index={2} name="CONNECTIVITY AND NETWORK SECURITY" img={<StaticImage src="../../images/internet_security.svg" class="img" />} to="network-security" />

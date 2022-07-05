@@ -46,7 +46,7 @@
     }
     p {
       font-size: 1em;
-      font-family: "roboto";
+      font-family: "poppins-light";
       z-index: 9;
     }
     h1 {
@@ -74,6 +74,9 @@
     font-size: 1em;
     font-family: "poppins";
   }
+  .certificate{
+    font-size: 65px;
+  }
 }
 @media (max-width: 900px) {
   .trust-note {
@@ -84,5 +87,17 @@
   }
   .content {
     width: 99% !important;
+  }
+}
+
+@media (max-width:380px) {
+  .trust-note {
+    font-size: 0.6em !important;
+  }
+  .content {
+    width: 100% !important;
+  }
+  .certificate{
+    font-size: 40px !important;
   }
 }

@@ -7,6 +7,7 @@ import Helmet from "react-helmet";
 import Footer from "../../components/footer";
 import { Link } from "gatsby";
 import "../../css/style.css";
+import MetaTags from "react-meta-tags";
 
 export default function cloud() {
   return (
@@ -54,7 +55,7 @@ export default function cloud() {
         </div>
       </Container>
       <Footer />
-      <Helmet>
+      <MetaTags>
         <title>CLOUD SERVICES|ESI Nigeria</title>
         <script src="/bootstrap.min.js"></script>
         <meta name="keywords" content="CLOUD SERVICES" />
@@ -63,7 +64,7 @@ export default function cloud() {
           content="Our hosting services offer innovative cloud solutions that provide a wide range of products covering business enterprises, government and non-governmental institutions. We put special premium on affordability, flexibility, scalability and security on all deployments.With ESI cloud services, businesses and agencies can run their operations from anywhere, anytime and on any device. Our professional services offering provide consultation for organizations, helping them in tailor bespoke cloud model that meet their business needs, goals and objectives.Feel free to check with us "
         />
         <link rel="canonical" href="https://www.esinigeria.com.ng/services/cloud/" />
-      </Helmet>
+      </MetaTags>
     </div>
   );
 }

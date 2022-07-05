@@ -4,7 +4,6 @@ import { FaPaperPlane } from "@react-icons/all-files/fa/FaPaperPlane";
 import { FaGlasses } from "@react-icons/all-files/fa/FaGlasses";
 import IconContainer from "../IconContainer";
 import Container from "../Container";
-import BreadCrumb from "../BreadCrumb";
 
 export default function Us() {
   return (
