@@ -1,9 +1,9 @@
 import React, { useReducer } from "react";
-import Container from "../../components/Container";
-import Navbar from "../../components/navbar";
+import Container from "../../Components/Container";
+import Navbar from "../../Components/navbar";
 import "../../css/style.css";
 import Helmet from "react-helmet";
-import Footer from "../../components/footer";
+import Footer from "../../Components/footer";
 import { MetaTags } from "react-meta-tags";
 
 export default function Enquire() {

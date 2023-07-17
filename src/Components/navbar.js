@@ -1,6 +1,6 @@
 import { Link,useStaticQuery,graphql } from "gatsby";
 import React from "react";
-import Container from "../components/Container";
+import Container from "../Components/Container";
 import { FaPhone } from "@react-icons/all-files/fa/FaPhone";
 import { IoMdMail } from "@react-icons/all-files/io/IoMdMail";
 

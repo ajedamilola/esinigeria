@@ -1,10 +1,10 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import Container from "../../components/Container";
-import BreadCrumb from "../../components/BreadCrumb";
-import Navbar from "../../components/navbar";
+import Container from "../../Components/Container";
+import BreadCrumb from "../../Components/BreadCrumb";
+import Navbar from "../../Components/navbar";
 import Helmet from "react-helmet";
-import Footer from "../../components/footer";
+import Footer from "../../Components/footer";
 import { Link } from "gatsby";
 import "../../css/style.css";
 import { MetaTags } from "react-meta-tags";

@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import Topbar from "../components/About/topbar";
-import Container from "../components/Container";
-import Footer from "../components/footer";
-import Breadcrumb from "../components/BreadCrumb";
+import Navbar from "../Components/navbar";
+import Topbar from "../Components/About/topbar";
+import Container from "../Components/Container";
+import Footer from "../Components/footer";
+import Breadcrumb from "../Components/BreadCrumb";
 import Helmet from "react-helmet";
 import "../css/style.css";
 

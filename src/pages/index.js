@@ -1,20 +1,20 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Intro from "../components/Home/Intro";
-import Navbar from "../components/navbar";
-import Topbar from "../components/Home/topbar";
+import Intro from "../Components/Home/Intro";
+import Navbar from "../Components/navbar";
+import Topbar from "../Components/Home/topbar";
 import "../css/style.css";
-import Us from "../components/Home/Us";
+import Us from "../Components/Home/Us";
 import { FaCertificate } from "@react-icons/all-files/fa/FaCertificate";
-import Services from "../components/Home/Services";
-import Features from "../components/Home/Features";
-import NewsLetter from "../components/Home/NewsLetter";
-import About from "../components/Home/KnowUs";
-import Footer from "../components/footer";
-import Container from "../components/Container";
-import BreadCrumb from "../components/BreadCrumb";
-import Clients from "../components/Clients";
-import Wave from "../components/Wave";
+import Services from "../Components/Home/Services";
+import Features from "../Components/Home/Features";
+import NewsLetter from "../Components/Home/NewsLetter";
+import About from "../Components/Home/KnowUs";
+import Footer from "../Components/footer";
+import Container from "../Components/Container";
+import BreadCrumb from "../Components/BreadCrumb";
+import Clients from "../Components/Clients";
+import Wave from "../Components/Wave";
 import { graphql as ql } from "gatsby";
 
 export const query = 

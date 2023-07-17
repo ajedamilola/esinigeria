@@ -1,17 +1,17 @@
 import React from "react";
-import Navbar from "../components/navbar";
+import Navbar from "../Components/navbar";
 import Helmet from "react-helmet";
-import Topbar from "../components/About/topbar";
-import Content from "../components/About/Content";
-import Footer from "../components/footer";
-// import GridImages from "../components/About/GridImages";
-import Container from "../components/Container";
-import Intro from "../components/About/Intro";
+import Topbar from "../Components/About/topbar";
+import Content from "../Components/About/Content";
+import Footer from "../Components/footer";
+// import GridImages from "../Components/About/GridImages";
+import Container from "../Components/Container";
+import Intro from "../Components/About/Intro";
 import "../css/style.css";
-import BreadCrumb from "../components/BreadCrumb";
-import Clients from "../components/clients";
-import Us from "../components/Home/Us";
-import Wave from "../components/Wave";
+import BreadCrumb from "../Components/BreadCrumb";
+import Clients from "../Components/Clients";
+import Us from "../Components/Home/Us";
+import Wave from "../Components/Wave";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link, graphql as ql } from "gatsby";
 

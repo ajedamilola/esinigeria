@@ -1,14 +1,14 @@
 import React from "react";
 import Helmet from "react-helmet";
-import Topbar from "../../components/Services/Topbar";
-import Navbar from "../../components/navbar";
-import Container from "../../components/Container";
-import BreadCrumb from "../../components/BreadCrumb";
-import Intro from "../../components/Services/Intro";
-import CardLg from "../../components/Services/CardLg";
-import Card from "../../components/Services/Card";
+import Topbar from "../../Components/Services/Topbar";
+import Navbar from "../../Components/navbar";
+import Container from "../../Components/Container";
+import BreadCrumb from "../../Components/BreadCrumb";
+import Intro from "../../Components/Services/Intro";
+import CardLg from "../../Components/Services/CardLg";
+import Card from "../../Components/Services/Card";
 import { StaticImage } from "gatsby-plugin-image";
-import Footer from "../../components/footer";
+import Footer from "../../Components/footer";
 import "../../css/style.css";
 
 
