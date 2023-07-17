@@ -72,7 +72,6 @@ export default function about({ data }) {
         </div>
       </Container>
 
-      <Wave fill="var(--bs-primary)" t={4} />
       <div className="bg-primary" id="history">
         <Container>
           <Content
@@ -102,7 +101,6 @@ export default function about({ data }) {
           </Content>
         </Container>
       </div>
-      <Wave fill="var(--bs-primary)" t={5} />
 
       {/* 
         <GridImages

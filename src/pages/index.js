@@ -41,13 +41,9 @@ export default function IndexPage({data}) {
       />
       <div className="bg-light">
         <Us />
-        <Wave fill="var(--bs-primary)" t={3} />
         <Services />
-        <Wave fill="var(--bs-primary)" t={2} />
         <Features />
-        <Wave fill="var(--bs-primary)" rotation="90" />
         <NewsLetter />
-        <Wave fill="var(--bs-primary)" t={5} />
         <About />
         <Container className="pb-7">
           <Clients />
