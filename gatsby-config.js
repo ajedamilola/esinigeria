@@ -3,9 +3,9 @@ module.exports = {
   siteMetadata: {
     title: `Elitist Solution International`,
     siteUrl: `https://www.esinigeria.com.ng`,
-    phone:"09161689303",
+    phone:"+2349023727066",
     email:"info@esinigeria.com.ng",
-    address:"6 Cemetery street Off Ajeromi Seceteriat,Ajegunle Apapa Lagos",
+    address:"Head Office: REINSURANCE Building 47, Marina, Lagos Island, Apapa Office: 9 Ibikunle Akintoye Street, opp Apapa Health centre, Apapa, Lagos.",
     description:" ESI was borne out of the desire to create an indigenous brand that will meet the I.T needs of organizations and individuals both locally and globally by providing first class services, products and innovations while creating an avenue for talented individuals to express themselves technologically",
     backend:"https://www.esinigeria.com.ng/api"
   },
@@ -29,3 +29,4 @@ module.exports = {
     },
   ],
 };
+//131.153.147.42
